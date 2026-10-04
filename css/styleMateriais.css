@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    border: 0;
+    margin:0;
+}
+
+
+h2{
+    text-align: center;
+    padding: 0.3em;
+    color:#56174f;
+    background-color: #f5edf4;
+}
+
+/*o fundo de quando o dialog ta aberto*/
+dialog::backdrop{
+    background-color: rgb(0 0 0 /.5);
+}
+
+dialog{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 1.5rem;
+    border: none;
+    border-radius: .5rem;
+
+    /*sombra*/
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    width: 80%;
+
+}
+
+.container-info {
+    position: relative;
+}
+
+.container-info h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.conteudo{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+
+.close{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    color: #f5edf4;
+    background-color: rgb(113, 16, 16);
+    border-radius: 5px;
+}
+
+.close:hover{
+    background-color: #f30404;
+}
+
+img{
+    border-radius: 5px;
+}

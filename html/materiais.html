@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materiais</title>
+    <link rel="stylesheet" href="/css/styleGeral.css">
+    <link rel="stylesheet" href="/css/styleMateriais.css">
+
+    <!--Importar fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+
+
 </head>
 
 <!--
@@ -13,49 +22,85 @@ Autora: Joana Gonçalves Cardoso
 Fontes
 Site do Elas Digitais: https://elasdigitais.wordpress.com/materiais-disponiveis/
 Vídeo de explicação sobre o carrossel: https://youtu.be/1FSmHr934OI?si=AuW0xkiincV_PnsJ 
+Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB-13b 
 -->
 
 <body>
     <h1>Materiais</h1>
     <p class="desc" p>Conheça nossos materiais digitais! Nesta seção, você encontra materiais desenvolvidos pelo projeto
         Elas Digitais, que podem ser utilizados e aplicados de forma remota em diferentes atividades.</p>
-        <!--Cada seção é para um tipo de material-->
+    <!--Cada seção é para um tipo de material-->
     <section>
         <!--Descrição geral-->
         <h2>Cartilhas</h2>
         <p class="desc">As cartilhas foram desenvolvidas com base no pensamento computacional, estimulando a lógica, a
             criatividade e a resolução de problemas, além de promover a representatividade feminina na tecnologia.</p>
-        <!--Essa div contém todos os materiais-->
+        <!--Essa div contém todos as cartilhas-->
         <div class="material">
             <!--Divs expecíficas para cada um dos materias-->
             <div class="mat" id="album-figurinhas">
                 <!--Foto de capa-->
-                <img src="img/cartilhas/ALBÚM DE FIGURINHAS.png" width="200px"> 
-                <p class="titulo">Álbum de figurinhas:
-                Jornada Feminina nas
-                STEM</p>
-                <!--Simples descrição-->
-                <p class="desc">
-                    Álbum de figuras que apresenta mulheres que fizeram história nas áreas de STEM, valorizando suas
-                    trajetórias e contribuições para a ciência e a tecnologia.
-                </p>
-                <!--Edital-->
-                <p class="edital">05/2024/DAE-PROEN Projetos de Ensino para Fomento às Ações de Equidade</p>
-                <!--Seção de dowload-->
-                <p>Acessar cartilha</p>
                 <button>
-                    <a href="https://drive.google.com/file/d/118xzuJ28NsEUhoaywuUyFwNttYSSi_LB/view?usp=drive_link" target="_blank">Impressão</a>
+                    <img src="img/cartilhas/ALBÚM DE FIGURINHAS.png" width="200px">
                 </button>
+                <!--
+            Dialog precisa ser habilitado para aparecer as informações
+            Utilizei js para ativar
+            -->
+                <dialog>
+                    <div class="container-info">
+                        <!--Botão para fechar-->
+                        <button class="close">
+                            X
+                        </button>
+                        <h3>Informações</h3>
+                        <div class="conteudo">
+                            <!--Img de novo-->
+                            <img src="img/cartilhas/ALBÚM DE FIGURINHAS.png" width="200px">
+                            <!--Classe para informações-->
+                            <div class="info">
+                                <p class="titulo">
+                                    <strong>Título</strong><br>
+                                    Álbum de figurinhas:
+                                    Jornada Feminina nas
+                                    STEM</p>
+                                
+                                <!--Simples descrição-->
+                                <p class="desc">
+                                    <strong>Descrição</strong><br>
+                                    Álbum de figuras que apresenta mulheres que fizeram história nas áreas de STEM,
+                                    valorizando
+                                    suas
+                                    trajetórias e contribuições para a ciência e a tecnologia.
+                                </p>
+                                <!--Edital-->
+                                
+                                <p class="edital">
+                                    <strong>Edital</strong><br>
+                                    05/2024/DAE-PROEN Projetos de Ensino para Fomento às Ações de Equidade
+                                </p>
+                                <!--Seção de dowload-->
+                                <p>Acessar cartilha</p>
+                                <button>
+                                    <a href="https://drive.google.com/file/d/118xzuJ28NsEUhoaywuUyFwNttYSSi_LB/view?usp=drive_link"
+                                        target="_blank">PDF para Impressão</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
             </div>
 
             <div class="mat" id="fundamental-1">
 
-                <img src="img/cartilhas/Livro Atividades REVISADA.png" width="200px"> 
+                <img src="img/cartilhas/Livro Atividades REVISADA.png" width="200px">
                 <p class="titulo">Cartilha
-                Fundamental 1</p>
+                    Fundamental 1</p>
 
                 <p class="desc">
-                    Cartilha voltada ao ensino fundamental I, para crianças de 7 a 10 anos, com atividades lúdicas que desenvolvem o pensamento computacional, a lógica e a resolução de problemas, destacando também mulheres na área da tecnologia.
+                    Cartilha voltada ao ensino fundamental I, para crianças de 7 a 10 anos, com atividades lúdicas que
+                    desenvolvem o pensamento computacional, a lógica e a resolução de problemas, destacando também
+                    mulheres na área da tecnologia.
                 </p>
 
                 <p class="edital">Edital PROEX 04/2023 - Edital de Câmpus_Gaspar
@@ -64,19 +109,22 @@ Vídeo de explicação sobre o carrossel: https://youtu.be/1FSmHr934OI?si=AuW0xk
                 </p>
 
                 <button>
-                    <a href="https://drive.google.com/file/d/1e0Z1AZFlmVNoJaSOYjR4Jdi3I8-sbsMt/view?usp=drive_link" target="_blank">Impressão</a>
+                    <a href="https://drive.google.com/file/d/1e0Z1AZFlmVNoJaSOYjR4Jdi3I8-sbsMt/view?usp=drive_link"
+                        target="_blank">Impressão</a>
                 </button>
 
             </div>
 
             <div class="mat" id="fundamental-2">
 
-                <img src="img/cartilhas/Cópia de Cartilha fundamental II REVISADA.png" width="200px"> 
+                <img src="img/cartilhas/Cópia de Cartilha fundamental II REVISADA.png" width="200px">
                 <p class="titulo">Cartilha
-                Fundamental 2</p>
+                    Fundamental 2</p>
 
                 <p class="desc">
-                    Cartilha voltada ao ensino fundamental II, para crianças de 10 a 14 anos, com atividades lúdicas que desenvolvem o pensamento computacional, a lógica e a resolução de problemas, destacando também mulheres na área da tecnologia.
+                    Cartilha voltada ao ensino fundamental II, para crianças de 10 a 14 anos, com atividades lúdicas que
+                    desenvolvem o pensamento computacional, a lógica e a resolução de problemas, destacando também
+                    mulheres na área da tecnologia.
                 </p>
 
                 <p class="edital">Edital PROEX 04/2023 - Edital de Câmpus_Gaspar
@@ -85,18 +133,22 @@ Vídeo de explicação sobre o carrossel: https://youtu.be/1FSmHr934OI?si=AuW0xk
                 </p>
 
                 <button>
-                    <a href="https://drive.google.com/file/d/1qiKkfJvj5rJI9J6ZLSqQz1ZIXw_PVFQO/view?usp=drive_link" target="_blank">Impressão</a>
+                    <a href="https://drive.google.com/file/d/1qiKkfJvj5rJI9J6ZLSqQz1ZIXw_PVFQO/view?usp=drive_link"
+                        target="_blank">Impressão</a>
                 </button>
-                
+
             </div>
 
             <div class="mat" id="Infantil-2">
 
-                <img src="img/cartilhas/Cartilha infantil v2.png" width="200px" <p class="titulo">Cartilha
-                Fundamental 2</p>
+                <img src="img/cartilhas/infantil.png" width="200px">
+                <p class="titulo">Cartilha infantil</p>
 
                 <p class="desc">
-                    Cartilha voltada ao ensino fundamental II, para crianças de 10 a 14 anos, com atividades lúdicas que desenvolvem o pensamento computacional, a lógica e a resolução de problemas, destacando também mulheres na área da tecnologia.
+                    Cartilha educativa voltada para crianças de 4 a 6 anos, com atividades lúdicas de pintura,
+                    associação, contagem, sequências e jogos que introduzem conceitos básicos de **computação e
+                    pensamento computacional**, apresentando também mulheres importantes da área da tecnologia.
+
                 </p>
 
                 <p class="edital">Edital PROEX 04/2023 - Edital de Câmpus_Gaspar
@@ -105,11 +157,84 @@ Vídeo de explicação sobre o carrossel: https://youtu.be/1FSmHr934OI?si=AuW0xk
                 </p>
 
                 <button>
-                    <a href="https://drive.google.com/file/d/1qiKkfJvj5rJI9J6ZLSqQz1ZIXw_PVFQO/view?usp=drive_link" target="_blank">Impressão</a>
+                    <a href="https://drive.google.com/file/d/1Y-MFz3T1bnyxL5FH1NoQ9qIDltYHQo9N/view?usp=drive_link"
+                        target="_blank">Impressão</a>
                 </button>
-                
+
             </div>
 
+            <div class="mat" id="Professores - 1">
+
+                <img src="img/cartilhas/Cartilha de  Formação de Formadores Pensamento Computacional _vS01.png"
+                    width="200px">
+                <p class="titulo">Pensamento computacional na Educação Básica</p>
+
+                <p class="desc">
+                    Cartilha voltada para professores, com materiais e orientações para apoiar atividades de ensino
+                    relacionadas à computação, tecnologia e pensamento computacional, contribuindo para práticas
+                    educativas que incentivem a participação de meninas na área de tecnologia.
+
+                </p>
+
+                <p class="edital">Edital PROEX 04/2023 - Edital de Câmpus_Gaspar
+                    <br>Edital PROPPI/PROEX no 06 - Fomento às atividades EPE do Câmpus Gaspar
+                    <br>EDITAL No 01/2023/PROPPI - PIBIC-EM
+                </p>
+
+                <button>
+                    <a href="https://drive.google.com/file/d/196RcPGXmS4bH98fk-OJYNoO_25Ymn4na/view?usp=drive_link"
+                        target="_blank">Impressão</a>
+                </button>
+
+            </div>
+            <div class="mat" id="Scratch">
+
+                <img src="img/cartilhas/Panfletos Oficina Scratch.png" width="200px">
+                <p class="titulo">Aprendendo a programar com Scratch</p>
+
+                <p class="desc">
+                    Material de apoio para oficinas de Scratch, desenvolvido para apresentar a programação de forma
+                    prática e lúdica, ajudando os participantes a explorar a criação de projetos e desenvolver
+                    habilidades de pensamento computacional.
+                </p>
+
+                <p class="edital">Edital DAE-PROEN/IFSC nº 05/2024 - Ações de Equidade
+                </p>
+
+                <button>
+                    <a href="https://drive.google.com/file/d/1d8bfYROQnnPZesXmBYvhFNOSIXLUZxmq/view?usp=drive_link"
+                        target="_blank">Impressão</a>
+                </button>
+
+            </div>
+
+            <div class="mat" id="jornada">
+
+                <img src="img/cartilhas/empregabilidade feminina - redimencionada.png" width="200px">
+                <p class="titulo">Jornada Feminina nas STEM</p>
+
+                <p class="desc">
+                    Material educativo que apresenta a trajetória e as contribuições de mulheres nas áreas de STEM
+                    (Ciência, Tecnologia, Engenharia e Matemática), destacando suas histórias e incentivando o
+                    reconhecimento da participação feminina nessas áreas.
+
+                </p>
+
+                <p class="edital">Edital PROEX 04/2023 - Edital de Câmpus_Gaspar
+                    <br>Edital PROPPI/PROEX nº 06 - Fomento às atividades EPE do Câmpus Gaspar
+                </p>
+
+                <button>
+                    <a href="https://drive.google.com/file/d/1Mfqi3aNd6_KdjGRuZUfdysZIDh_1VcTP/view?usp=drive_link"
+                        target="_blank">Impressão</a>
+                </button>
+
+            </div>
+            <p>Link para todas as nossas cartilhas</p>
+            <button>
+                <a href="https://drive.google.com/drive/u/0/folders/1gxfVBLniZcl6kvykM5UPp5KmBY1USyKW"
+                    target="_blank">Drive</a>
+            </button>
         </div>
     </section>
 
@@ -146,3 +271,24 @@ Vídeo de explicação sobre o carrossel: https://youtu.be/1FSmHr934OI?si=AuW0xk
 </body>
 
 </html>
+
+<script>
+    //veerifica qual div esta
+    const divs = document.querySelectorAll(".mat");
+    //percorre tds as divs
+    divs.forEach(function (div) {
+
+        //pega o botão específico da div que foi selecionada e abre o dialog dela
+        const button = div.querySelector("button");
+        //pega o modal especifico da div
+        const modal = div.querySelector("dialog");
+        //pega o botão do dialog
+        const buttonClose = modal.querySelector("dialog button");
+
+        //abre o modal com mais informações
+        button.onclick = function () { modal.showModal(); }
+
+        //botão para fechar o modal
+        buttonClose.onclick = function () { modal.close(); }
+    });
+</script>
