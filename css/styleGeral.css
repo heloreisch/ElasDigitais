@@ -16,15 +16,6 @@ body{
     padding-top: 2em;
 }
 
-h1{
-    color:#56174f;
-}
-h2{
-    text-align: center;
-    padding: 0.3em;
-    color:#fefdfa;
-    background-color: #56174f;
-}
 
  @media screen and (max-width: 400px){
              *{
