@@ -1,0 +1,125 @@
+*{
+      font-family: 'Open Sans', sans-serif;
+      margin: 0px;
+}
+
+.cards {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.missao {
+    padding: 25px;
+    background-color: rgb(228, 75, 228);
+    border: 2px solid rgb(240, 125, 240);
+      color: aliceblue;
+    border-radius: 8px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.visao {
+    padding: 25px;
+    border: 2px solid rgb(184, 33, 184);
+    background-color: rgb(179, 27, 179);
+    color: aliceblue;
+    border-radius: 8px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.valores {
+    padding: 25px;
+    border: 2px solid rgb(203, 28, 209);
+    background-color: rgb(152, 25, 156);
+    border-radius: 8px;
+      color: aliceblue;
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+/* BANNER */
+
+.banner {
+    width: 85%;
+    min-height: 550px;
+    background-color: #8b0e49;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    color: white;
+}
+
+.texto {
+    width: 50%;
+}
+
+.subtitulo {
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    font-size: 80px;
+    line-height: 0.9;
+
+    margin: 0 0 30px 0;
+
+    text-align: left;
+}
+
+.banner h1 span {
+    color: #f29bea;
+}
+
+
+.descricao {
+    font-size: 20px;
+    line-height: 1.5;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+
+
+.botao {
+    display: inline-block;
+    background-color: white;
+    color:#8b0e49 ;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.288);
+    transition: 0.3s;
+    color: aliceblue;
+}
+
+
+.imagem {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+}
+
+.imagem img {
+    width: 50%;
+    max-width: 550px;
+}
