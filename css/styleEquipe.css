@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: static;
+
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--preto);
+}
+
+.root {
+  --roxo-escuro: #3f1d57;
+  --roxo-elasdigitais: #6b2d84;
+  --roxinho: #8a4fa3;
+  --roxo-claro: #caa7dd;
+  --branco: #ffffff;
+  --preto: #111111;
+  --cinza-claro: #f5f2f8;
+  --cinza-texto: #4b4450;
+  --sombra: 0 8px 25px rgba(0, 0, 0, 0.12);
+  --arredondamento-borda: 18px;
+  --transicao: 0.3s ease;
+}
+
+/* cabecalho */
+header {
+    position: sticky;
+    top: 0;
+
+    background-color: rgba(252, 248, 247, 0.95);
+
+    padding: 18px 11%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e7dfe5;
+
+    z-index: 10;
+}
+
+/* elas digitais titulo */
+header h1 {
+    font-size: 30px;
+    color: var(--roxo-escuro);
+}
+
+/* menu */
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #1d1730;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+    padding-bottom: 8px;
+}
+
+/* tudo o que tem dentro da pagina */
+main {
+    position: relative;
+
+    width: 78%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+/* titulo equipe */
+main > h1 {
+    font-size: 45px;
+
+    color: #3f0b3d;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* subtitulo equipe */
+.subtitulo {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 650px;
+
+    margin-bottom: 45px;
+
+    color: #29233f;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+/* pesquisadores e bolsistas */
+section > h2 {
+    font-size: 29px;
+
+    color: #3f0b3d;
+
+    margin-bottom: 25px;
+    border-left: 6px solid #681263;
+    padding-left: 15px;
+}
+
+/* equipe */
+.equipe {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* cada integrante */
+.pessoa {
+    position: relative;
+
+    background-color: #f1e6f1;
+
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(70, 25, 65, 0.08);
+    display: grid;
+
+    grid-template-columns: 85px 1fr;
+    column-gap: 25px;
+    row-gap: 5px;
+
+    align-items: center;
+
+    transition: 0.3s;
+
+    animation: aparecer 0.8s;
+}
+
+/* foto dos integrantes */
+.fotoIntegrante {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    grid-column: 1;
+
+    grid-row: 1 / 4;
+}
+
+/* informações dos integrantes */
+.informacoes {
+    flex: 1;
+}
+
+/* animação do mouse */
+.pessoa:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(70, 25, 65, 0.15);
+}
+
+/* nomes */
+.pessoa h3 {
+    grid-column: 2;
+    font-size: 20px;
+
+    color: #3f0b3d;
+    
+    margin-bottom: 3px;
+}
+
+/* cargo dos pesquisadores e curso dos bolsistas */
+.pessoa h2 {
+    grid-column: 2;
+
+    color: #a01986;
+
+    font-size: 16px;
+    font-weight: normal;
+
+    margin-bottom: 5px;
+}
+
+/* descrição */
+.pessoa p {
+    grid-column: 2;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #29233f;
+}
+
+/* footer */
+footer {
+    background-color: #681263;
+    color: #e7dfe5;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+/* animação dos integrantes */
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+
+    main {
+        width: 85%;
+    }
+
+    main > h1 {
+        font-size: 38px;
+    }
+
+    .pessoa {
+        padding-left: 115px;
+    }
+
+    .pessoa::before {
+        left: 22px;
+
+        width: 70px;
+
+        height: 70px;
+    }
+}
