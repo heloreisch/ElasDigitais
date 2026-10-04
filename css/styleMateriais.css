@@ -4,9 +4,58 @@
     margin:0;
 }
 
+.container-slider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 
-h2{
-    padding: 0.3em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*mostra 3 cartilhas */
+.viewport {
+    width: 780px;
+    overflow: hidden;
+    padding: 15px;
+}
+
+/* Fila que desliza */
+.container-images {
+  position: relative; 
+  display: flex;
+  gap: 20px;
+  transition: transform .4s ease;
+}
+
+.mat {
+    border-radius: 10px;
+    transition: transform .3s ease;
+}
+
+.mat:hover {
+    transform: scale(1.05);
+}
+
+/*estilização dos botões do carrossel*/
+#prev-button, #next-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img, #next-button img {
+  width: 100%;
+  height: 100%;
+}
+
+/*muda a direção do botão de proximo*/
+#prev-button {
+  transform: rotate(180deg);
 }
 
 /*o fundo de quando o dialog ta aberto*/
