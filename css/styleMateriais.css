@@ -38,7 +38,9 @@ section{
     animation: aparecer 0.8s;
 }
 section >.desc{
-
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #f1e6f1;
     font-size: 18px;
     line-height: 1.4;
     max-width: 900px;
@@ -255,5 +257,74 @@ h1 {
         opacity: 1;
 
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    main {
+        width: 92%;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    /*um material por vez*/
+    .viewport,
+    .viewport.grande {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .container-images {
+        gap: 20px;
+    }
+
+    .container-images .mat {
+        flex: 0 0 100%;
+    }
+
+    .mat img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /*Botões do carrossel*/
+    .prev-button,
+    .next-button {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
+    /*único material*/
+    .solo .mat img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    dialog {
+        width: 92%;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 1.2rem;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .conteudo > img {
+        width: 60%;
+        max-width: 220px;
+        height: auto;
+    }
+
+    .link-geral{
+        margin-bottom: 20px;
     }
 }
