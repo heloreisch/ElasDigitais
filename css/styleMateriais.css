@@ -1,10 +1,23 @@
-*{
-    padding: 0;
-    border: 0;
-    margin:0;
+:root {
+  --roxo-escuro: #3f1d57;
+  --roxo-elasdigitais: #6b2d84;
+  --roxinho: #8a4fa3;
+  --roxo-branco:#f1e6f1;
+  --branco: #ffffff;
+  --preto: #111111;
+  --cinza-claro: #f5f2f8;
+  --arredondamento-borda: 10px;
+  --transicao: 0.3s ease;
 }
 
-body{
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    
     position: static;
 
     font-family: Arial, sans-serif;
@@ -12,7 +25,7 @@ body{
     color: var(--preto);
 }
 
-main{
+main {
     position: relative;
 
     width: 78%;
@@ -21,7 +34,30 @@ main{
     padding-bottom: 60px;
 }
 
-main >.desc{
+h1 {
+    font-size: 45px;
+
+    color: var(--roxo-escuro);
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 29px;
+
+    color: var(--roxo-elasdigitais);
+
+    margin-bottom: 25px;
+    border-left: 6px solid var(--roxo-elasdigitais);
+    padding-left: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+main>.desc {
 
     font-size: 18px;
     line-height: 1.4;
@@ -29,36 +65,39 @@ main >.desc{
 
     margin-bottom: 45px;
 
-    color: #29233f;
+    color: var(--preto);
 }
 
-section{
-     transition: 0.3s;
 
-    animation: aparecer 0.8s;
-}
-section >.desc{
-    border-radius: 10px;
+section>.desc {
+    border-radius: var(--arredondamento-borda);
     padding: 0.5rem;
-    background-color: #f1e6f1;
+    background-color: var(--roxo-branco);
     font-size: 18px;
     line-height: 1.4;
     max-width: 900px;
 
     margin-bottom: 45px;
 
-    color: #29233f;
+    color: var(--preto);
 }
 
-.container-slider {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+section {
+    transition: 0.3s;
 
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+    animation: aparecer 0.8s;
+}
+
+/*carrossel*/
+.container-slider {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /*mostra 3 cartilhas */
@@ -69,21 +108,21 @@ section >.desc{
     padding-top: 15px;
 }
 
-.viewport.grande{
+.viewport.grande {
     width: 500px;
 }
 
 /* Fila que desliza */
 .container-images {
-  position: relative; 
-  display: flex;
-  gap: 20px;
-  transition: transform .4s ease;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    transition: transform .4s ease;
 }
 
 .mat {
     border-radius: 10px;
-    transition: transform .3s ease;
+    transition: var(--transicao);
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -93,30 +132,71 @@ section >.desc{
 }
 
 /*estilização dos botões do carrossel*/
-.prev-button, .next-button {
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+.prev-button,
+.next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.prev-button img, .next-button img {
-  width: 100%;
-  height: 100%;
+.prev-button img,
+.next-button img {
+    width: 100%;
+    height: 100%;
 }
 
 /*muda a direção do botão de proximo*/
 .prev-button {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
-/*o fundo de quando o dialog ta aberto*/
-dialog::backdrop{
-    background-color: rgb(0 0 0 /.5);
+.link-geral {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+
+    background-color: var(--roxo-elasdigitais);
+    padding: 10px 20px;
+    color: #f5edf4;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-dialog{
+.link {
+    background-color: var(--roxo-elasdigitais);
+    padding: 10px 20px;
+    color: #f5edf4;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.link:hover,
+.link-geral:hover {
+    background-color: var(--roxo-escuro);
+}
+
+.solo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    border-radius: 10px;
+    display: block;
+}
+
+
+dialog {
 
     position: fixed;
     top: 50%;
@@ -133,9 +213,9 @@ dialog{
 
 }
 
-img{
-    border-radius: 10px;
-    display: block;
+/*o fundo de quando o dialog ta aberto*/
+dialog::backdrop {
+    background-color: rgb(0 0 0 /.5);
 }
 
 .container-info {
@@ -148,20 +228,20 @@ img{
     margin-bottom: 25px;
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     gap: 30px;
     align-items: flex-start;
     width: 90%;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     height: 283px;
 }
 
-.close{
+.close {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     padding-left: 0.5rem;
@@ -171,79 +251,18 @@ img{
     top: 10px;
     right: 10px;
 
-    color: #f5edf4;
+    color: var(--cinza-claro);
     background-color: rgb(113, 16, 16);
     border-radius: 5px;
 }
 
-.close:hover{
+.close:hover {
     background-color: #f30404;
 }
 
-.link {
-    background-color: #652d5e;
-    padding: 10px 20px;
-    color:#f5edf4;
-    border-radius: 5px;
-    margin-top: auto;
-    margin-right: auto;
-    text-decoration: none;
-}
-
-.link:hover, .link-geral:hover{
-    background-color: #601657;
-}
-
-.link-geral {
-    display: block;
-    width: fit-content;
-    margin: 30px auto 0;
-
-    background-color: #652d5e;
-    padding: 10px 20px;
-    color: #f5edf4;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-
-p{
-    margin-bottom: 10px;
-}
-
-button{
+button {
     border-radius: 10px;
 }
-.solo{
-    display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-h2 {
-    font-size: 29px;
-
-    color: #3f0b3d;
-
-    margin-bottom: 25px;
-    border-left: 6px solid #681263;
-    padding-left: 15px;
-}
-
-h1 {
-    font-size: 45px;
-
-    color: #3f0b3d;
-
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
 
 @keyframes aparecer {
 
@@ -263,7 +282,7 @@ h1 {
 @media (max-width: 768px) {
 
     main {
-        width: 92%;
+        width: 90%;
         padding-top: 30px;
         padding-bottom: 40px;
     }
@@ -275,15 +294,7 @@ h1 {
         max-width: 320px;
     }
 
-    .container-images {
-        gap: 20px;
-    }
-
-    .container-images .mat {
-        flex: 0 0 100%;
-    }
-
-    .mat img {
+    .mat>img {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
@@ -318,13 +329,20 @@ h1 {
         gap: 15px;
     }
 
-    .conteudo > img {
-        width: 60%;
-        max-width: 220px;
-        height: auto;
+    /*padroniza container das imagens*/
+    .container-images .mat {
+        flex: 0 0 100%;
+        width: 100%;
     }
 
-    .link-geral{
+    /*padroniza o tamanho das imagens*/
+    .mat img {
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+    }
+
+    .link-geral {
         margin-bottom: 20px;
     }
 }
