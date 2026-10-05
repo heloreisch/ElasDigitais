@@ -17,9 +17,10 @@
 
 /*mostra 3 cartilhas */
 .viewport {
-    width: 780px;
+    width: 790px;
     overflow: hidden;
-    padding: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 /* Fila que desliza */
@@ -33,6 +34,8 @@
 .mat {
     border-radius: 10px;
     transition: transform .3s ease;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .mat:hover {
@@ -81,7 +84,8 @@ dialog{
 }
 
 img{
-    border-radius: 10px;;
+    border-radius: 10px;
+    display: block;
 }
 
 .container-info {
@@ -143,3 +147,16 @@ p{
     margin-bottom: 10px;
 }
 
+button{
+    border-radius: 10px;
+}
+.solo{
+    display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
