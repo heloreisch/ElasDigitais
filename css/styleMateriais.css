@@ -4,6 +4,52 @@
     margin:0;
 }
 
+body{
+    position: static;
+
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--preto);
+}
+
+main{
+    position: relative;
+
+    width: 78%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+main >.desc{
+
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 650px;
+
+    margin-bottom: 45px;
+
+    color: #29233f;
+}
+
+section{
+     transition: 0.3s;
+
+    animation: aparecer 0.8s;
+}
+section >.desc{
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #f1e6f1;
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 900px;
+
+    margin-bottom: 45px;
+
+    color: #29233f;
+}
+
 .container-slider {
   display: flex;
   width: 100%;
@@ -21,6 +67,10 @@
     overflow: hidden;
     padding-bottom: 15px;
     padding-top: 15px;
+}
+
+.viewport.grande{
+    width: 500px;
 }
 
 /* Fila que desliza */
@@ -137,11 +187,25 @@ img{
     border-radius: 5px;
     margin-top: auto;
     margin-right: auto;
+    text-decoration: none;
 }
 
-.link:hover{
+.link:hover, .link-geral:hover{
     background-color: #601657;
 }
+
+.link-geral {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+
+    background-color: #652d5e;
+    padding: 10px 20px;
+    color: #f5edf4;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 
 p{
     margin-bottom: 10px;
@@ -159,4 +223,108 @@ button{
 
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 29px;
+
+    color: #3f0b3d;
+
+    margin-bottom: 25px;
+    border-left: 6px solid #681263;
+    padding-left: 15px;
+}
+
+h1 {
+    font-size: 45px;
+
+    color: #3f0b3d;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    main {
+        width: 92%;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    /*um material por vez*/
+    .viewport,
+    .viewport.grande {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .container-images {
+        gap: 20px;
+    }
+
+    .container-images .mat {
+        flex: 0 0 100%;
+    }
+
+    .mat img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /*Botões do carrossel*/
+    .prev-button,
+    .next-button {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
+    /*único material*/
+    .solo .mat img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    dialog {
+        width: 92%;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 1.2rem;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .conteudo > img {
+        width: 60%;
+        max-width: 220px;
+        height: auto;
+    }
+
+    .link-geral{
+        margin-bottom: 20px;
+    }
 }

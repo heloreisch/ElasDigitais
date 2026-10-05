@@ -1,19 +1,26 @@
-@import url('https://googleapis.com');
 
-*{
+* {
     padding: 0;
-    margin: 0;
     border: 0;
-
-    font-family: 'Open Sans', sans-serif;
-   /* background-color: #fefdfa; */
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body{
-    padding-left: 6em;
-    padding-right: 6em;
-    padding-bottom: 2em;
-    padding-top: 2em;
+body {
+    position: static;
+
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--preto);
+}
+
+main {
+    position: relative;
+
+    width: 78%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
 
@@ -80,4 +87,15 @@ footer {
                 grid-template-columns: 1fr 1fr;
             
             }
+        }
+
+        @media screen and (max-width: 768px) {
+
+    header {
+        position: static;          
+        flex-direction: column;   
+        align-items: center;
+        gap: 12px;
+        padding: 15px 5%;
+    }
         }

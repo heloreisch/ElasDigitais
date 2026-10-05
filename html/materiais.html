@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Materiais</title>
-        <link rel="stylesheet" href="/css/styleGeral.css">
-        <link rel="stylesheet" href="/css/styleMateriais.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiais</title>
+    <link rel="stylesheet" href="/css/styleGeral.css">
+    <link rel="stylesheet" href="/css/styleMateriais.css">
 
-        <!--Importar fonte-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap"
-            rel="stylesheet">
+</head>
 
-    </head>
-
-    <!--
+<!--
 Autora: Joana Gonçalves Cardoso
 
 Fontes
@@ -26,11 +19,11 @@ Vídeo de explicação sobre o carrossel: https://youtu.be/1FSmHr934OI?si=AuW0xk
 Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB-13b 
 -->
 
-    <body>
+<body>
 
-        <!-- cabecalho -->
-        <div id="header"></div>
-
+    <!-- cabecalho -->
+    <div id="header"></div>
+    <main>
         <h1>Materiais</h1>
         <p class="desc" p>Conheça nossos materiais digitais! Nesta seção, você
             encontra materiais desenvolvidos pelo projeto
@@ -38,7 +31,7 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
             em diferentes atividades.</p>
 
         <!--Cada seção é para um tipo de material-->
-        <section>
+        <section class="cartilhas">
             <!--Descrição geral-->
             <h2>Cartilhas</h2>
             <p class="desc">As cartilhas foram desenvolvidas com base no
@@ -47,447 +40,447 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
                 representatividade feminina na tecnologia.</p>
 
             <!--Essa div contém todos as cartilhas-->
-            <div class="material">
-                <!--Container do carrossel-->
-                <div class="container-slider">
-                    <!--Botao do carrossel-->
-                    <button class="prev-button"><img src="img/arrow.png"
-                            alt="prev button"></button>
-                    <div class="viewport">
-                        <!--Imagens do carrossel-->
-                        <div class="container-images">
-                            <!--Divs expecíficas para cada um dos materias-->
-                            <div class="mat" id="album-figurinhas">
-                                <!--Foto de capa-->
-                                <button>
-                                    <img
-                                        src="img/cartilhas/ALBÚM DE FIGURINHAS.png"
-                                        height="350px" width="250px">
-                                </button>
-                                <!--
-            Dialog precisa ser habilitado para aparecer as informações
-            Utilizei js para ativar
-            -->
-                                <dialog>
-                                    <div class="container-info">
-                                        <!--Botão para fechar-->
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-                                            <!--Img de novo-->
-                                            <img
-                                                src="img/cartilhas/ALBÚM DE FIGURINHAS.png"
-                                                width="200px">
-                                            <!--Classe para informações-->
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Álbum de figurinhas:
-                                                    Jornada Feminina nas
-                                                    STEM
-                                                </p>
+            <!--Container do carrossel-->
+            <div class="container-slider">
+                <!--Botao do carrossel-->
+                <button class="prev-button"><img src="img/arrow.png" alt="prev button"></button>
+                <div class="viewport">
+                    <!--Imagens do carrossel-->
+                    <div class="container-images">
+                        <!--Divs expecíficas para cada um dos materias-->
+                        <div class="mat" id="album-figurinhas">
+                            <!--Foto de capa-->
+                            <button>
+                                <img src="img/cartilhas/ALBÚM DE FIGURINHAS.png" height="350px" width="250px">
+                            </button>
+                            <!--
+                        Dialog precisa ser habilitado para aparecer as informações
+                        Utilizei js para ativar
+                        -->
+                            <dialog>
+                                <div class="container-info">
+                                    <!--Botão para fechar-->
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+                                        <!--Img de novo-->
+                                        <img src="img/cartilhas/ALBÚM DE FIGURINHAS.png" width="200px">
+                                        <!--Classe para informações-->
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Álbum de figurinhas:
+                                                Jornada Feminina nas
+                                                STEM
+                                            </p>
 
-                                                <!--Simples descrição-->
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    Álbum de figuras que
-                                                    apresenta mulheres que
-                                                    fizeram história nas áreas
-                                                    de
-                                                    STEM,
-                                                    valorizando
-                                                    suas
-                                                    trajetórias e contribuições
-                                                    para a ciência e a
-                                                    tecnologia.
-                                                </p>
-                                                <!--Edital-->
+                                            <!--Simples descrição-->
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Álbum de figuras que
+                                                apresenta mulheres que
+                                                fizeram história nas áreas
+                                                de
+                                                STEM,
+                                                valorizando
+                                                suas
+                                                trajetórias e contribuições
+                                                para a ciência e a
+                                                tecnologia.
+                                            </p>
+                                            <!--Edital-->
 
-                                                <p class="edital">
-                                                    <strong>Edital</strong><br>
-                                                    05/2024/DAE-PROEN Projetos
-                                                    de Ensino para Fomento às
-                                                    Ações de Equidade
-                                                </p>
-                                                <!--Seção de dowload-->
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/118xzuJ28NsEUhoaywuUyFwNttYSSi_LB/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                05/2024/DAE-PROEN Projetos
+                                                de Ensino para Fomento às
+                                                Ações de Equidade
+                                            </p>
+                                            <!--Seção de dowload-->
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/118xzuJ28NsEUhoaywuUyFwNttYSSi_LB/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
 
-                                            </div>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="fundamental-1">
-                                <button><img
-                                        src="img/cartilhas/Livro Atividades REVISADA.png"
-                                        height="350px"
-                                        width="250px"></button>
+                        <div class="mat" id="fundamental-1">
+                            <button><img src="img/cartilhas/Livro Atividades REVISADA.png" height="350px"
+                                    width="250px"></button>
 
-                                <dialog>
-                                    <div class="container-info">
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-                                            <img
-                                                src="img/cartilhas/Livro Atividades REVISADA.png"
-                                                width="200px">
-                                            <div class="info">
-                                                <p class="titulo">Cartilha
-                                                    Fundamental 1</p>
+                            <dialog>
+                                <div class="container-info">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+                                        <img src="img/cartilhas/Livro Atividades REVISADA.png" width="200px">
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Cartilha
+                                                Fundamental 1</p>
 
-                                                <p class="desc">
-                                                    Cartilha voltada ao ensino
-                                                    fundamental I, para crianças
-                                                    de 7 a 10 anos,
-                                                    com
-                                                    atividades
-                                                    lúdicas
-                                                    que
-                                                    desenvolvem o pensamento
-                                                    computacional, a lógica e a
-                                                    resolução de
-                                                    problemas,
-                                                    destacando
-                                                    também
-                                                    mulheres na área da
-                                                    tecnologia.
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Cartilha voltada ao ensino
+                                                fundamental I, para crianças
+                                                de 7 a 10 anos,
+                                                com
+                                                atividades
+                                                lúdicas
+                                                que
+                                                desenvolvem o pensamento
+                                                computacional, a lógica e a
+                                                resolução de
+                                                problemas,
+                                                destacando
+                                                também
+                                                mulheres na área da
+                                                tecnologia.
+                                            </p>
 
-                                                <p class="edital">Edital PROEX
-                                                    04/2023 - Edital de
-                                                    Câmpus_Gaspar
-                                                    <br>Edital PROPPI/PROEX no
-                                                    06 - Fomento às atividades
-                                                    EPE do Câmpus
-                                                    Gaspar
-                                                    <br>EDITAL No 01/2023/PROPPI
-                                                    - PIBIC-EM
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital PROEX
+                                                04/2023 - Edital de
+                                                Câmpus_Gaspar
+                                                <br>Edital PROPPI/PROEX no
+                                                06 - Fomento às atividades
+                                                EPE do Câmpus
+                                                Gaspar
+                                                <br>EDITAL No 01/2023/PROPPI
+                                                - PIBIC-EM
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1e0Z1AZFlmVNoJaSOYjR4Jdi3I8-sbsMt/view?usp=drive_link"
-                                                    target="_blank">Impressão</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1e0Z1AZFlmVNoJaSOYjR4Jdi3I8-sbsMt/view?usp=drive_link"
+                                                target="_blank">Impressão</a>
 
-                                            </div>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="fundamental-2">
+                        <div class="mat" id="fundamental-2">
 
-                                <button><img
-                                        src="img/cartilhas/Cópia de Cartilha fundamental II REVISADA.png"
-                                        height="350px" width="250px"></button>
+                            <button><img src="img/cartilhas/Cópia de Cartilha fundamental II REVISADA.png"
+                                    height="350px" width="250px"></button>
 
-                                <dialog>
-                                    <div class="container-info">
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-                                            <img
-                                                src="img/cartilhas/Cópia de Cartilha fundamental II REVISADA.png"
-                                                width="200px">
-                                            <div class="info">
-                                                <p class="titulo">Cartilha
-                                                    Fundamental 2</p>
+                            <dialog>
+                                <div class="container-info">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+                                        <img src="img/cartilhas/Cópia de Cartilha fundamental II REVISADA.png"
+                                            width="200px">
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Cartilha
+                                                Fundamental 2</p>
 
-                                                <p class="desc">
-                                                    Cartilha voltada ao ensino
-                                                    fundamental II, para
-                                                    crianças de 10 a 14
-                                                    anos,
-                                                    com
-                                                    atividades
-                                                    lúdicas
-                                                    que
-                                                    desenvolvem o pensamento
-                                                    computacional, a lógica e a
-                                                    resolução de
-                                                    problemas,
-                                                    destacando
-                                                    também
-                                                    mulheres na área da
-                                                    tecnologia.
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Cartilha voltada ao ensino
+                                                fundamental II, para
+                                                crianças de 10 a 14
+                                                anos,
+                                                com
+                                                atividades
+                                                lúdicas
+                                                que
+                                                desenvolvem o pensamento
+                                                computacional, a lógica e a
+                                                resolução de
+                                                problemas,
+                                                destacando
+                                                também
+                                                mulheres na área da
+                                                tecnologia.
+                                            </p>
 
-                                                <p class="edital">Edital PROEX
-                                                    04/2023 - Edital de
-                                                    Câmpus_Gaspar
-                                                    <br>Edital PROPPI/PROEX no
-                                                    06 - Fomento às atividades
-                                                    EPE do Câmpus
-                                                    Gaspar
-                                                    <br>EDITAL No 01/2023/PROPPI
-                                                    - PIBIC-EM
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital PROEX
+                                                04/2023 - Edital de
+                                                Câmpus_Gaspar
+                                                <br>Edital PROPPI/PROEX no
+                                                06 - Fomento às atividades
+                                                EPE do Câmpus
+                                                Gaspar
+                                                <br>EDITAL No 01/2023/PROPPI
+                                                - PIBIC-EM
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1qiKkfJvj5rJI9J6ZLSqQz1ZIXw_PVFQO/view?usp=drive_link"
-                                                    target="_blank">Impressão</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1qiKkfJvj5rJI9J6ZLSqQz1ZIXw_PVFQO/view?usp=drive_link"
+                                                target="_blank">Impressão</a>
 
-                                            </div>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="Infantil-2">
+                        <div class="mat" id="Infantil-2">
 
-                                <button><img src="img/cartilhas/infantil.png"
-                                        height="350px" width="250px"></button>
+                            <button><img src="img/cartilhas/infantil.png" height="350px" width="250px"></button>
 
-                                <dialog>
-                                    <div class="container-info">
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-                                            <img
-                                                src="img/cartilhas/infantil.png"
-                                                width="200px">
-                                            <div class="info">
-                                                <p class="titulo">Cartilha
-                                                    infantil</p>
+                            <dialog>
+                                <div class="container-info">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+                                        <img src="img/cartilhas/infantil.png" width="200px">
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>Cartilha
+                                                infantil</p>
 
-                                                <p class="desc">
-                                                    Cartilha educativa voltada
-                                                    para crianças de 4 a 6 anos,
-                                                    com atividades
-                                                    lúdicas de
-                                                    pintura,
-                                                    associação, contagem,
-                                                    sequências e jogos que
-                                                    introduzem conceitos
-                                                    básicos de
-                                                    **computação e
-                                                    pensamento computacional**,
-                                                    apresentando também mulheres
-                                                    importantes da
-                                                    área
-                                                    da
-                                                    tecnologia.
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Cartilha educativa voltada
+                                                para crianças de 4 a 6 anos,
+                                                com atividades
+                                                lúdicas de
+                                                pintura,
+                                                associação, contagem,
+                                                sequências e jogos que
+                                                introduzem conceitos
+                                                básicos de
+                                                **computação e
+                                                pensamento computacional**,
+                                                apresentando também mulheres
+                                                importantes da
+                                                área
+                                                da
+                                                tecnologia.
 
-                                                </p>
+                                            </p>
 
-                                                <p class="edital">Edital PROEX
-                                                    04/2023 - Edital de
-                                                    Câmpus_Gaspar
-                                                    <br>Edital PROPPI/PROEX no
-                                                    06 - Fomento às atividades
-                                                    EPE do Câmpus
-                                                    Gaspar
-                                                    <br>EDITAL No 01/2023/PROPPI
-                                                    - PIBIC-EM
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital PROEX
+                                                04/2023 - Edital de
+                                                Câmpus_Gaspar
+                                                <br>Edital PROPPI/PROEX no
+                                                06 - Fomento às atividades
+                                                EPE do Câmpus
+                                                Gaspar
+                                                <br>EDITAL No 01/2023/PROPPI
+                                                - PIBIC-EM
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1Y-MFz3T1bnyxL5FH1NoQ9qIDltYHQo9N/view?usp=drive_link"
-                                                    target="_blank">Impressão</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1Y-MFz3T1bnyxL5FH1NoQ9qIDltYHQo9N/view?usp=drive_link"
+                                                target="_blank">Impressão</a>
 
-                                            </div>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="Professores - 1">
+                        <div class="mat" id="Professores - 1">
 
-                                <button><img
-                                        src="img/cartilhas/Cartilha de  Formação de Formadores Pensamento Computacional _vS01.png"
-                                        height="350px" width="250px"></button>
-                                <dialog>
-                                    <div class="container-info">
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-                                            <img
-                                                src="img/cartilhas/Cartilha de  Formação de Formadores Pensamento Computacional _vS01.png"
-                                                width="200px">
-                                            <div class="info">
-                                                <p class="titulo">Pensamento
-                                                    computacional na Educação
-                                                    Básica</p>
+                            <button><img
+                                    src="img/cartilhas/Cartilha de  Formação de Formadores Pensamento Computacional _vS01.png"
+                                    height="350px" width="250px"></button>
+                            <dialog>
+                                <div class="container-info">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+                                        <img src="img/cartilhas/Cartilha de  Formação de Formadores Pensamento Computacional _vS01.png"
+                                            width="200px">
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Pensamento
+                                                computacional na Educação
+                                                Básica</p>
 
-                                                <p class="desc">
-                                                    Cartilha voltada para
-                                                    professores, com materiais e
-                                                    orientações para
-                                                    apoiar
-                                                    atividades de
-                                                    ensino
-                                                    relacionadas à computação,
-                                                    tecnologia e pensamento
-                                                    computacional,
-                                                    contribuindo para
-                                                    práticas
-                                                    educativas que incentivem a
-                                                    participação de meninas na
-                                                    área de
-                                                    tecnologia.
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Cartilha voltada para
+                                                professores, com materiais e
+                                                orientações para
+                                                apoiar
+                                                atividades de
+                                                ensino
+                                                relacionadas à computação,
+                                                tecnologia e pensamento
+                                                computacional,
+                                                contribuindo para
+                                                práticas
+                                                educativas que incentivem a
+                                                participação de meninas na
+                                                área de
+                                                tecnologia.
 
-                                                </p>
+                                            </p>
 
-                                                <p class="edital">Edital PROEX
-                                                    04/2023 - Edital de
-                                                    Câmpus_Gaspar
-                                                    <br>Edital PROPPI/PROEX no
-                                                    06 - Fomento às atividades
-                                                    EPE do Câmpus
-                                                    Gaspar
-                                                    <br>EDITAL No 01/2023/PROPPI
-                                                    - PIBIC-EM
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital PROEX
+                                                04/2023 - Edital de
+                                                Câmpus_Gaspar
+                                                <br>Edital PROPPI/PROEX no
+                                                06 - Fomento às atividades
+                                                EPE do Câmpus
+                                                Gaspar
+                                                <br>EDITAL No 01/2023/PROPPI
+                                                - PIBIC-EM
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/196RcPGXmS4bH98fk-OJYNoO_25Ymn4na/view?usp=drive_link"
-                                                    target="_blank">Impressão</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/196RcPGXmS4bH98fk-OJYNoO_25Ymn4na/view?usp=drive_link"
+                                                target="_blank">Impressão</a>
 
-                                            </div>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
-                            <div class="mat" id="Scratch">
+                                </div>
+                            </dialog>
+                        </div>
+                        <div class="mat" id="Scratch">
 
-                                <button><img
-                                        src="img/cartilhas/Panfletos Oficina Scratch.png"
-                                        height="350px"
-                                        width="250px"></button>
-                                <dialog>
-                                    <div class="container-info">
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-                                            <img
-                                                src="img/cartilhas/Panfletos Oficina Scratch.png"
-                                                width="200px">
-                                            <div class="info">
-                                                <p class="titulo">Aprendendo a
-                                                    programar com Scratch</p>
+                            <button><img src="img/cartilhas/Panfletos Oficina Scratch.png" height="350px"
+                                    width="250px"></button>
+                            <dialog>
+                                <div class="container-info">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+                                        <img src="img/cartilhas/Panfletos Oficina Scratch.png" width="200px">
+                                        <div class="info">
+                                            <p class="titulo"><strong>Título</strong><br>Aprendendo a
+                                                programar com Scratch</p>
 
-                                                <p class="desc">
-                                                    Material de apoio para
-                                                    oficinas de Scratch,
-                                                    desenvolvido para apresentar
-                                                    a
-                                                    programação
-                                                    de
-                                                    forma
-                                                    prática e lúdica, ajudando
-                                                    os participantes a explorar
-                                                    a criação de
-                                                    projetos
-                                                    e
-                                                    desenvolver
-                                                    habilidades de pensamento
-                                                    computacional.
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Material de apoio para
+                                                oficinas de Scratch,
+                                                desenvolvido para apresentar
+                                                a
+                                                programação
+                                                de
+                                                forma
+                                                prática e lúdica, ajudando
+                                                os participantes a explorar
+                                                a criação de
+                                                projetos
+                                                e
+                                                desenvolver
+                                                habilidades de pensamento
+                                                computacional.
+                                            </p>
 
-                                                <p class="edital">Edital
-                                                    DAE-PROEN/IFSC nº 05/2024 -
-                                                    Ações de Equidade
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital
+                                                DAE-PROEN/IFSC nº 05/2024 -
+                                                Ações de Equidade
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1d8bfYROQnnPZesXmBYvhFNOSIXLUZxmq/view?usp=drive_link"
-                                                    target="_blank">Impressão</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1d8bfYROQnnPZesXmBYvhFNOSIXLUZxmq/view?usp=drive_link"
+                                                target="_blank">Impressão</a>
 
-                                            </div>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="jornada">
+                        <div class="mat" id="jornada-empregabilidade">
 
-                                <button><img
-                                        src="img/cartilhas/empregabilidade feminina - redimencionada.png"
-                                        height="350px"></button>
-                                <dialog>
-                                    <div class="container-info">
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-                                            <img
-                                                src="img/cartilhas/empregabilidade feminina - redimencionada.png"
-                                                width="200px">
-                                            <div class="info">
-                                                <p class="titulo">Jornada
-                                                    Feminina nas STEM</p>
+                            <button><img src="img/cartilhas/empregabilidade feminina - redimencionada.png"
+                                    height="350px"></button>
+                            <dialog>
+                                <div class="container-info">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+                                        <img src="img/cartilhas/empregabilidade feminina - redimencionada.png"
+                                            width="200px">
+                                        <div class="info">
+                                            <p class="titulo"><strong>Título</strong><br>Jornada
+                                                Feminina nas STEM</p>
 
-                                                <p class="desc">
-                                                    Material educativo que
-                                                    apresenta a trajetória e as
-                                                    contribuições de
-                                                    mulheres
-                                                    nas
-                                                    áreas
-                                                    de
-                                                    STEM
-                                                    (Ciência, Tecnologia,
-                                                    Engenharia e Matemática),
-                                                    destacando suas
-                                                    histórias e
-                                                    incentivando
-                                                    o
-                                                    reconhecimento da
-                                                    participação feminina nessas
-                                                    áreas.
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Material educativo que
+                                                apresenta a trajetória e as
+                                                contribuições de
+                                                mulheres
+                                                nas
+                                                áreas
+                                                de
+                                                STEM
+                                                (Ciência, Tecnologia,
+                                                Engenharia e Matemática),
+                                                destacando suas
+                                                histórias e
+                                                incentivando
+                                                o
+                                                reconhecimento da
+                                                participação feminina nessas
+                                                áreas.
 
-                                                </p>
+                                            </p>
 
-                                                <p class="edital">Edital PROEX
-                                                    04/2023 - Edital de
-                                                    Câmpus_Gaspar
-                                                    <br>Edital PROPPI/PROEX nº
-                                                    06 - Fomento às atividades
-                                                    EPE do Câmpus
-                                                    Gaspar
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital PROEX
+                                                04/2023 - Edital de
+                                                Câmpus_Gaspar
+                                                <br>Edital PROPPI/PROEX nº
+                                                06 - Fomento às atividades
+                                                EPE do Câmpus
+                                                Gaspar
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1Mfqi3aNd6_KdjGRuZUfdysZIDh_1VcTP/view?usp=drive_link"
-                                                    target="_blank">Impressão</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1Mfqi3aNd6_KdjGRuZUfdysZIDh_1VcTP/view?usp=drive_link"
+                                                target="_blank">Impressão</a>
 
-                                            </div>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
-                    <button class="next-button"><img src="img/arrow.png"
-                            alt="next button"></button>
                 </div>
-                <p>Link para todas as nossas cartilhas</p>
+                <button class="next-button"><img src="img/arrow.png" alt="next button"></button>
+            </div>
 
-                <a
-                    href="https://drive.google.com/drive/u/0/folders/1gxfVBLniZcl6kvykM5UPp5KmBY1USyKW"
-                    target="_blank"
-                    class="link">Drive</a>
+
+            <a href="https://drive.google.com/drive/u/0/folders/1gxfVBLniZcl6kvykM5UPp5KmBY1USyKW" target="_blank"
+                class="link-geral">Link para todas as nossas cartilhas</a>
 
             </div>
         </section>
 
-        <section>
+        <section class="cartilhas-arduino">
             <h2>Cartilhas - Arduino</h2>
             <p class="desc">Aprenda Arduino de forma prática e visual com nossas
                 cartilhas! Desenvolvidas como material de
@@ -495,807 +488,751 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
                 para as oficinas, elas também podem ser utilizadas em atividades
                 remotas.</p>
 
-            <div class="material">
-                <div class="container-slider">
-                    <button class="prev-button"><img src="img/arrow.png"
-                            alt="prev button"></button>
-                    <div class="viewport">
-                        <div class="container-images">
+            <div class="container-slider">
 
-                            <div class="mat" id="introducao">
+                <button class="prev-button"><img src="img/arrow.png" alt="prev button"></button>
 
-                                <button>
-                                    <img
-                                        src="img/cartilhas-arduino/introdução ao arduino.png"
-                                        height="350px" width="250px">
-                                </button>
+                <div class="viewport">
 
-                                <dialog>
-                                    <div class="container-info">
+                    <div class="container-images">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                        <div class="mat" id="introducao">
 
-                                            <img
-                                                src="img/cartilhas-arduino/introdução ao arduino.png"
-                                                width="200px">
+                            <button>
+                                <img src="img/cartilhas-arduino/introdução ao arduino.png" height="350px" width="250px">
+                            </button>
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Introdução ao Arduino
-                                                </p>
+                            <dialog>
+                                <div class="container-info">
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    A cartilha introdutória ao
-                                                    Arduino que apresenta os
-                                                    principais
-                                                    componentes da placa,
-                                                    explica o uso da protoboard
-                                                    e ensina os primeiros
-                                                    passos para programar no
-                                                    Arduino IDE.
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                                </p>
+                                        <img src="img/cartilhas-arduino/introdução ao arduino.png" width="200px">
 
-                                                <p class="edital">
-                                                    <strong>Edital</strong><br>
-                                                    Edital 12/2025/PROPPI/DAE
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Introdução ao Arduino
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1PAplTFKAUyQd1l1NIk_-1ZPzdwX2wkET/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    vizualização</a>
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1E6xdcZUGPGWtderPA0ztWbAAYQI4aS0H/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
-                                            </div>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                A cartilha introdutória ao
+                                                Arduino que apresenta os
+                                                principais
+                                                componentes da placa,
+                                                explica o uso da protoboard
+                                                e ensina os primeiros
+                                                passos para programar no
+                                                Arduino IDE.
+
+                                            </p>
+
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital 12/2025/PROPPI/DAE
+                                            </p>
+
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1PAplTFKAUyQd1l1NIk_-1ZPzdwX2wkET/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                vizualização</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1E6xdcZUGPGWtderPA0ztWbAAYQI4aS0H/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="semaforo">
+                        <div class="mat" id="semaforo">
 
-                                <button>
-                                    <img
-                                        src="img/cartilhas-arduino/Oficina de Arduíno (1).png"
-                                        height="350px"
-                                        width="250px">
-                                </button>
+                            <button>
+                                <img src="img/cartilhas-arduino/Oficina de Arduíno (1).png" height="350px"
+                                    width="250px">
+                            </button>
 
-                                <dialog>
-                                    <div class="container-info">
+                            <dialog>
+                                <div class="container-info">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                            <img
-                                                src="img/cartilhas-arduino/Oficina de Arduíno (1).png"
-                                                width="200px">
+                                        <img src="img/cartilhas-arduino/Oficina de Arduíno (1).png" width="200px">
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Primeiros passos com o
-                                                    Arduino - Semáforo
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Primeiros passos com o
+                                                Arduino - Semáforo
+                                            </p>
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    A cartilha ensina a montar e
-                                                    programar um semáforo com
-                                                    Arduino,
-                                                    apresentando a protoboard, a
-                                                    conexão dos LEDs e as
-                                                    principais funções do
-                                                    código, como "pinMode()",
-                                                    "digitalWrite()"" e
-                                                    "delay()".
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                A cartilha ensina a montar e
+                                                programar um semáforo com
+                                                Arduino,
+                                                apresentando a protoboard, a
+                                                conexão dos LEDs e as
+                                                principais funções do
+                                                código, como "pinMode()",
+                                                "digitalWrite()"" e
+                                                "delay()".
+                                            </p>
 
-                                                <p class="edital">
-                                                    <strong>Edital</strong><br>
-                                                    Edital DAE-PROEN/IFSC no
-                                                    05/2024 - Ações de Equidade
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital DAE-PROEN/IFSC no
+                                                05/2024 - Ações de Equidade
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1HZLxvUYhopMiBEKIyx642G8mBWzdhIdr/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    vizualização</a>
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1I_RKx7tirfb34gEtCpr2L5j6nhmZlo15/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
-                                            </div>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1HZLxvUYhopMiBEKIyx642G8mBWzdhIdr/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                vizualização</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1I_RKx7tirfb34gEtCpr2L5j6nhmZlo15/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="led">
+                        <div class="mat" id="led">
 
-                                <button>
-                                    <img
-                                        src="img/cartilhas-arduino/Oficina de arduino - Led.png"
-                                        height="350px"
-                                        width="250px">
-                                </button>
+                            <button>
+                                <img src="img/cartilhas-arduino/Oficina de arduino - Led.png" height="350px"
+                                    width="250px">
+                            </button>
 
-                                <dialog>
-                                    <div class="container-info">
+                            <dialog>
+                                <div class="container-info">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                            <img
-                                                src="img/cartilhas-arduino/Oficina de arduino - Led.png"
-                                                width="200px">
+                                        <img src="img/cartilhas-arduino/Oficina de arduino - Led.png" width="200px">
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Primeiros passos com o
-                                                    Arduino - LED
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Primeiros passos com o
+                                                Arduino - LED
+                                            </p>
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    Cartilha prática que
-                                                    apresenta o Arduino, a
-                                                    protoboard e o funcionamento
-                                                    de um LED. Ensina a montar
-                                                    um circuito para acender o
-                                                    LED utilizando os
-                                                    componentes necessários.
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Cartilha prática que
+                                                apresenta o Arduino, a
+                                                protoboard e o funcionamento
+                                                de um LED. Ensina a montar
+                                                um circuito para acender o
+                                                LED utilizando os
+                                                componentes necessários.
 
-                                                </p>
+                                            </p>
 
-                                                <p class="edital">
-                                                    <strong>Edital</strong><br>
-                                                    Edital 12/2025/PROPPI/DAE
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital 12/2025/PROPPI/DAE
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1XrAd4r_zsi2LoC8PG4nmnvt9J6t5phbQ/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    vizualização</a>
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1JShKMtWgPl5bgBOLurzN7lWNkK66z9u0/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
-                                            </div>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1XrAd4r_zsi2LoC8PG4nmnvt9J6t5phbQ/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                vizualização</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1JShKMtWgPl5bgBOLurzN7lWNkK66z9u0/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="campainha">
+                        <div class="mat" id="campainha">
 
-                                <button>
-                                    <img
-                                        src="img/cartilhas-arduino/Oficina de Arduíno - Campainha (1).png"
-                                        height="350px"
-                                        width="250px">
-                                </button>
+                            <button>
+                                <img src="img/cartilhas-arduino/Oficina de Arduíno - Campainha (1).png" height="350px"
+                                    width="250px">
+                            </button>
 
-                                <dialog>
-                                    <div class="container-info">
+                            <dialog>
+                                <div class="container-info">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                            <img
-                                                src="img/cartilhas-arduino/Oficina de Arduíno - Campainha (1).png"
-                                                width="200px">
+                                        <img src="img/cartilhas-arduino/Oficina de Arduíno - Campainha (1).png"
+                                            width="200px">
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Primeiros passos com o
-                                                    Arduino - Campainha
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Primeiros passos com o
+                                                Arduino - Campainha
+                                            </p>
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    Cartilha prática que
-                                                    apresenta o funcionamento do
-                                                    buzzer com Arduino e
-                                                    ensina a montar uma
-                                                    campainha acionada por
-                                                    botão. Ela explica a
-                                                    diferença entre buzzer ativo
-                                                    e passivo e mostra o código
-                                                    utilizado para
-                                                    emitir sons.
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Cartilha prática que
+                                                apresenta o funcionamento do
+                                                buzzer com Arduino e
+                                                ensina a montar uma
+                                                campainha acionada por
+                                                botão. Ela explica a
+                                                diferença entre buzzer ativo
+                                                e passivo e mostra o código
+                                                utilizado para
+                                                emitir sons.
 
-                                                </p>
+                                            </p>
 
-                                                <p class="edital">
-                                                    <strong>Edital</strong><br>
-                                                    Edital 12/2025/PROPPI/DAE
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital 12/2025/PROPPI/DAE
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1yK4TrvOXE5tT14g2dnA108tW1KzqiKI8/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    vizualização</a>
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1G1U6u88-NTJjzhUCxiBABXP_KGIrXeFM/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
-                                            </div>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1yK4TrvOXE5tT14g2dnA108tW1KzqiKI8/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                vizualização</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1G1U6u88-NTJjzhUCxiBABXP_KGIrXeFM/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="Musica">
+                        <div class="mat" id="Musica">
 
-                                <button>
-                                    <img
-                                        src="img/cartilhas-arduino/Oficina de Arduíno - Música.png"
-                                        height="350px"
-                                        width="250px">
-                                </button>
+                            <button>
+                                <img src="img/cartilhas-arduino/Oficina de Arduíno - Música.png" height="350px"
+                                    width="250px">
+                            </button>
 
-                                <dialog>
-                                    <div class="container-info">
+                            <dialog>
+                                <div class="container-info">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                            <img
-                                                src="img/cartilhas-arduino/Oficina de Arduíno - Música.png"
-                                                width="200px">
+                                        <img src="img/cartilhas-arduino/Oficina de Arduíno - Música.png" width="200px">
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Primeiros passos com o
-                                                    Arduino - Música
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Primeiros passos com o
+                                                Arduino - Música
+                                            </p>
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    A cartilha apresenta um
-                                                    circuito e linhas de
-                                                    programação para o
-                                                    funcionamento
-                                                    de uma música, de modo que
-                                                    ao encaixar o conector,
-                                                    notas músicais
-                                                    sejam emitidas pelo Buzzer.
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                A cartilha apresenta um
+                                                circuito e linhas de
+                                                programação para o
+                                                funcionamento
+                                                de uma música, de modo que
+                                                ao encaixar o conector,
+                                                notas músicais
+                                                sejam emitidas pelo Buzzer.
+                                            </p>
 
-                                                <p class="edital">
-                                                    <strong>Edital</strong><br>
-                                                    Edital 12/2025/PROPPI/DAE
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital 12/2025/PROPPI/DAE
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1hAeOEucI1NLBE4m2I-JmhKA11oKhutOS/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    vizualização</a>
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1jZTB_lntC2wFirFHYXu22c3Rhhoe9EaW/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
-                                            </div>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1hAeOEucI1NLBE4m2I-JmhKA11oKhutOS/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                vizualização</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1jZTB_lntC2wFirFHYXu22c3Rhhoe9EaW/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="presenca">
+                        <div class="mat" id="presenca">
 
-                                <button>
-                                    <img
-                                        src="img/cartilhas-arduino/Oficina de arduino - Sensor de presença.png"
-                                        height="350px" width="250px">
-                                </button>
+                            <button>
+                                <img src="img/cartilhas-arduino/Oficina de arduino - Sensor de presença.png"
+                                    height="350px" width="250px">
+                            </button>
 
-                                <dialog>
-                                    <div class="container-info">
+                            <dialog>
+                                <div class="container-info">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                            <img
-                                                src="img/cartilhas-arduino/Oficina de arduino - Sensor de presença.png"
-                                                width="200px">
+                                        <img src="img/cartilhas-arduino/Oficina de arduino - Sensor de presença.png"
+                                            width="200px">
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Primeiros passos com o
-                                                    Arduino - Sensor de presença
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Primeiros passos com o
+                                                Arduino - Sensor de presença
+                                            </p>
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    A cartilha apresenta um
-                                                    circuito e linhas de
-                                                    programação para o
-                                                    funcionamento
-                                                    de um Led com mini sensor de
-                                                    presença PIR, de modo que ao
-                                                    detectar movimento, a luz
-                                                    seja acionada.
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                A cartilha apresenta um
+                                                circuito e linhas de
+                                                programação para o
+                                                funcionamento
+                                                de um Led com mini sensor de
+                                                presença PIR, de modo que ao
+                                                detectar movimento, a luz
+                                                seja acionada.
+                                            </p>
 
-                                                <p class="edital">
-                                                    <strong>Edital</strong><br>
-                                                    Edital 12/2025/PROPPI/DAE
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital 12/2025/PROPPI/DAE
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1IXuiM9--WsCDnHji7Qgzs2LY_HAcWr3h/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    vizualização</a>
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1ZSFKwGlXOkqU8mL04aWOx9-or-Pny4Pu/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
-                                            </div>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1IXuiM9--WsCDnHji7Qgzs2LY_HAcWr3h/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                vizualização</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1ZSFKwGlXOkqU8mL04aWOx9-or-Pny4Pu/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="presenca">
+                        <div class="mat" id="gas">
 
-                                <button>
-                                    <img
-                                        src="img/cartilhas-arduino/Oficina de arduino - Sensor de gás.png"
-                                        height="350px"
-                                        width="250px">
-                                </button>
+                            <button>
+                                <img src="img/cartilhas-arduino/Oficina de arduino - Sensor de gás.png" height="350px"
+                                    width="250px">
+                            </button>
 
-                                <dialog>
-                                    <div class="container-info">
+                            <dialog>
+                                <div class="container-info">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                            <img
-                                                src="img/cartilhas-arduino/Oficina de arduino - Sensor de gás.png"
-                                                width="200px">
+                                        <img src="img/cartilhas-arduino/Oficina de arduino - Sensor de gás.png"
+                                            width="200px">
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Primeiros passos com o
-                                                    Arduino - Sensor de gases
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Primeiros passos com o
+                                                Arduino - Sensor de gases
+                                            </p>
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    A cartilha apresenta um
-                                                    circuito e linhas de
-                                                    programação para o
-                                                    funcionamento
-                                                    de um alarme com com o
-                                                    módulo sensor de gás MQ2, de
-                                                    modo que
-                                                    ao detectar o gás butano
-                                                    (gas de cozinha), um alarme
-                                                    é acionado.
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                A cartilha apresenta um
+                                                circuito e linhas de
+                                                programação para o
+                                                funcionamento
+                                                de um alarme com com o
+                                                módulo sensor de gás MQ2, de
+                                                modo que
+                                                ao detectar o gás butano
+                                                (gas de cozinha), um alarme
+                                                é acionado.
+                                            </p>
 
-                                                <p class="edital">
-                                                    <strong>Edital</strong><br>
-                                                    Edital 12/2025/PROPPI/DAE
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital 12/2025/PROPPI/DAE
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1y5wVAKcf69PDVzxSrfVd-_2YB9tGVEqc/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    vizualização</a>
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/15e48_x64NwFz1rvwFE30hIG95i8MSjXO/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
-                                            </div>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1y5wVAKcf69PDVzxSrfVd-_2YB9tGVEqc/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                vizualização</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/15e48_x64NwFz1rvwFE30hIG95i8MSjXO/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
+                        </div>
 
-                            <div class="mat" id="display">
+                        <div class="mat" id="display">
 
-                                <button>
-                                    <img
-                                        src="img/cartilhas-arduino/Oficina de arduino - Tela LCD.png"
-                                        height="350px"
-                                        width="250px">
-                                </button>
+                            <button>
+                                <img src="img/cartilhas-arduino/Oficina de arduino - Tela LCD.png" height="350px"
+                                    width="250px">
+                            </button>
 
-                                <dialog>
-                                    <div class="container-info">
+                            <dialog>
+                                <div class="container-info">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                            <img
-                                                src="img/cartilhas-arduino/Oficina de arduino - Tela LCD.png"
-                                                width="200px">
+                                        <img src="img/cartilhas-arduino/Oficina de arduino - Tela LCD.png"
+                                            width="200px">
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Primeiros passos com o
-                                                    Arduino - Display LCD
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Primeiros passos com o
+                                                Arduino - Display LCD
+                                            </p>
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    A cartilha apresenta um
-                                                    circuito e linhas de
-                                                    programação para o
-                                                    funcionamento
-                                                    de um Display LCD 16x2, de
-                                                    modo a aparecer o texto
-                                                    desejado.
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                A cartilha apresenta um
+                                                circuito e linhas de
+                                                programação para o
+                                                funcionamento
+                                                de um Display LCD 16x2, de
+                                                modo a aparecer o texto
+                                                desejado.
+                                            </p>
 
-                                                <p class="edital">
-                                                    <strong>Edital</strong><br>
-                                                    Edital 12/2025/PROPPI/DAE
-                                                </p>
+                                            <p class="edital">
+                                                <strong>Edital</strong><br>
+                                                Edital 12/2025/PROPPI/DAE
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/15GpG7Nc2y4YVIz3FsQNqoX6wj_I4Ar-P/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    vizualização</a>
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1fw4_cZBUDRUjhcyh4ipJ02mBJs7mFtLC/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
-                                            </div>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/15GpG7Nc2y4YVIz3FsQNqoX6wj_I4Ar-P/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                vizualização</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1fw4_cZBUDRUjhcyh4ipJ02mBJs7mFtLC/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
-                    <button class="next-button"><img src="img/arrow.png"
-                            alt="next button"></button>
                 </div>
-                <p>Link para todas as nossas cartilhas</p>
+                <button class="next-button"><img src="img/arrow.png" alt="next button"></button>
 
-                <a
-                    href="https://drive.google.com/drive/u/0/folders/1gxfVBLniZcl6kvykM5UPp5KmBY1USyKW"
-                    target="_blank"
-                    class="link">Drive</a>
+
 
             </div>
+            <a href="https://drive.google.com/drive/u/0/folders/1pVAlVwp7OVrQpf_e9UFk10MAkC4lmmKT" target="_blank"
+                class="link-geral">Link para todas as nossas cartilhas de arduino</a>
         </section>
 
-        <section>
+        <section class="jogos-desplugados">
             <h2>Jogos desplugados</h2>
             <p class="desc">Os jogos desplugados são uma alternativa para
                 promover o ensino da computação de forma lúdica sem a
                 necessidade do acesso a computadores.</p>
 
-            <div class="material">
-                <div class="container-slider">
-                    <button class="prev-button"><img src="img/arrow.png"
-                            alt="prev button"></button>
-                    <div class="viewport">
-                        <div class="container-images">
+            <div class="container-slider">
+                <button class="prev-button"><img src="img/arrow.png" alt="prev button"></button>
+                <div class="viewport grande">
+                    <div class="container-images">
 
-                            <div class="mat" id="pensamento">
+                        <div class="mat" id="pensamento">
 
-                                <button>
-                                    <img
-                                        src="img/jogos/jogo-pensamento computacional.webp"
-                                        height="350px" width="500px">
-                                </button>
+                            <button>
+                                <img src="img/jogos/jogo-pensamento computacional.webp" height="350px" width="500px">
+                            </button>
 
-                                <dialog>
-                                    <div class="container-info">
+                            <dialog>
+                                <div class="container-info">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                            <img
-                                                src="img/jogos/jogo-pensamento computacional.webp"
-                                                width="300px">
+                                        <img src="img/jogos/jogo-pensamento computacional.webp" width="300px">
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Jogo do Pensamento
-                                                    Computacional
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Jogo do Pensamento
+                                                Computacional
+                                            </p>
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    O Jogo do Pensamento
-                                                    Computacional é composto por
-                                                    9 kits de jogos educativos
-                                                    que estimulam, de forma
-                                                    lúdica e desplugada, o
-                                                    desenvolvimento dos quatro
-                                                    pilares do pensamento
-                                                    computacional nas crianças.
-                                                    O material inclui manuais,
-                                                    cards de contextualização e
-                                                    instruções para réplica e
-                                                    montagem, podendo ser
-                                                    reproduzido e distribuído
-                                                    com os devidos créditos.
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                O Jogo do Pensamento
+                                                Computacional é composto por
+                                                9 kits de jogos educativos
+                                                que estimulam, de forma
+                                                lúdica e desplugada, o
+                                                desenvolvimento dos quatro
+                                                pilares do pensamento
+                                                computacional nas crianças.
+                                                O material inclui manuais,
+                                                cards de contextualização e
+                                                instruções para réplica e
+                                                montagem, podendo ser
+                                                reproduzido e distribuído
+                                                com os devidos créditos.
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/1XMDlp1CUYwwLC77xRvTMvOlzsgrzELxb/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    Impressão</a>
-                                            </div>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/1XMDlp1CUYwwLC77xRvTMvOlzsgrzELxb/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                Impressão</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
-
-                            <div class="mat" id="jornada">
-
-                                <button>
-                                    <img src="img/jogos/jornada delas.webp"
-                                        height="350px" width="500px">
-                                </button>
-
-                                <dialog>
-                                    <div class="container-info">
-
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-
-                                            <img
-                                                src="img/jogos/jornada delas.webp"
-                                                width="300px">
-
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Jornada Delas
-                                                </p>
-
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    O jogo de computação
-                                                    desplugada “Jornada Delas” é
-                                                    um jogo colaborativo que
-                                                    busca valorizar mulheres
-                                                    cientistas, ajudando-as a
-                                                    recuperar trabalhos
-                                                    extraviados de suas teses.
-                                                    Ele conta com 24 cenários,
-                                                    fichas de resgate, cartas de
-                                                    ação, vórtice e escada
-                                                    rolante, além de materiais e
-                                                    manual de instruções para
-                                                    sua aplicação e montagem.
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dialog>
-                            </div>
-
-                            <div class="mat" id="caminho">
-
-                                <button>
-                                    <img src="img/jogos/caminho delas.webp"
-                                        height="350px" width="500px">
-                                </button>
-
-                                <dialog>
-                                    <div class="container-info">
-
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-
-                                            <img
-                                                src="img/jogos/caminho delas.webp"
-                                                width="300px">
-
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    O Caminho Delas
-                                                </p>
-
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    O jogo de computação
-                                                    desplugada “O Caminho Delas”
-                                                    é baseado nos pilares do
-                                                    Pensamento Computacional e
-                                                    possui versões com mulheres
-                                                    nacionais e internacionais.
-                                                    Ele busca ensinar
-                                                    informática de forma lúdica,
-                                                    apresentando mulheres
-                                                    importantes para a ciência e
-                                                    incentivando meninas a
-                                                    conhecerem diferentes
-                                                    possibilidades de carreira.
-                                                    Os participantes criam
-                                                    caminhos no tabuleiro e
-                                                    respondem perguntas sobre as
-                                                    personagens.
-                                                </p>
-
-                                                <a class="link"
-                                                    href="https://youtu.be/IBmhMEnuzxU?si=Ksg1k5BtePdLP8wz"
-                                                    target="_blank">Vídeo
-                                                    explicativo</a>
-                                                <a class="link"
-                                                    href="https://drive.google.com/file/d/14qfRitOLWLBokDp0dAfWtCHBVYsLZxYL/view?usp=drive_link"
-                                                    target="_blank">PDF para
-                                                    impressão</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dialog>
-                            </div>
-
-                            <div class="mat" id="bug">
-
-                                <button>
-                                    <img src="img/jogos/bug.webp" height="350px"
-                                        width="500px">
-                                </button>
-
-                                <dialog>
-                                    <div class="container-info">
-
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-
-                                            <img src="img/jogos/bug.webp"
-                                                width="300px">
-
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Onde está o Bug?
-                                                </p>
-
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    O “Jogo Onde Está o Bug?”,
-                                                    criado pelo Elas Digitais,
-                                                    tem o intuito de testar a
-                                                    habilidade de sistematização
-                                                    de problemas com base nos
-                                                    quatros pilares do
-                                                    pensamento computacional, de
-                                                    forma desplugada,
-                                                    especificamente em
-                                                    reconhecimentos de padrões.
-                                                    Neste jogo você tem como
-                                                    objetivo montar combinações
-                                                    de cores, afim de encontrar
-                                                    os bugs e fazer o máximo de
-                                                    combinações possíveis com as
-                                                    cores escolhidas.
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dialog>
-                            </div>
-
-                            <div class="mat" id="roupa">
-
-                                <button>
-                                    <img src="img/jogos/roup.png" height="350px"
-                                        width="500px">
-                                </button>
-
-                                <dialog>
-                                    <div class="container-info">
-
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-
-                                            <img src="img/jogos/roup.png"
-                                                width="300px">
-
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Com que roupa eu vou?
-                                                </p>
-
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    No jogo, você irá acompanhar
-                                                    Renata em uma emocionante
-                                                    jornada de compras, onde
-                                                    terá que selecionar as peças
-                                                    de roupa mais adequadas.
-                                                    Depois, você usará suas
-                                                    habilidades de combinação
-                                                    para criar looks de acordo
-                                                    com a situção adequada.
-                                                    Quanto mais rápido e
-                                                    criativo você for, mais
-                                                    próximo estará de ajudar
-                                                    Renata a brilhar e ganhar o
-                                                    prêmio!
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dialog>
-                            </div>
-
+                                </div>
+                            </dialog>
                         </div>
+
+                        <div class="mat" id="jornada-delas">
+
+                            <button>
+                                <img src="img/jogos/jornada delas.webp" height="350px" width="500px">
+                            </button>
+
+                            <dialog>
+                                <div class="container-info">
+
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+
+                                        <img src="img/jogos/jornada delas.webp" width="300px">
+
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Jornada Delas
+                                            </p>
+
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                O jogo de computação
+                                                desplugada “Jornada Delas” é
+                                                um jogo colaborativo que
+                                                busca valorizar mulheres
+                                                cientistas, ajudando-as a
+                                                recuperar trabalhos
+                                                extraviados de suas teses.
+                                                Ele conta com 24 cenários,
+                                                fichas de resgate, cartas de
+                                                ação, vórtice e escada
+                                                rolante, além de materiais e
+                                                manual de instruções para
+                                                sua aplicação e montagem.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="mat" id="caminho-delas">
+
+                            <button>
+                                <img src="img/jogos/caminho delas.webp" height="350px" width="500px">
+                            </button>
+
+                            <dialog>
+                                <div class="container-info">
+
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+
+                                        <img src="img/jogos/caminho delas.webp" width="300px">
+
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                O Caminho Delas
+                                            </p>
+
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                O jogo de computação
+                                                desplugada “O Caminho Delas”
+                                                é baseado nos pilares do
+                                                Pensamento Computacional e
+                                                possui versões com mulheres
+                                                nacionais e internacionais.
+                                                Ele busca ensinar
+                                                informática de forma lúdica,
+                                                apresentando mulheres
+                                                importantes para a ciência e
+                                                incentivando meninas a
+                                                conhecerem diferentes
+                                                possibilidades de carreira.
+                                                Os participantes criam
+                                                caminhos no tabuleiro e
+                                                respondem perguntas sobre as
+                                                personagens.
+                                            </p>
+
+                                            <a class="link" href="https://youtu.be/IBmhMEnuzxU?si=Ksg1k5BtePdLP8wz"
+                                                target="_blank">Vídeo
+                                                explicativo</a>
+                                            <a class="link"
+                                                href="https://drive.google.com/file/d/14qfRitOLWLBokDp0dAfWtCHBVYsLZxYL/view?usp=drive_link"
+                                                target="_blank">PDF para
+                                                impressão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="mat" id="bug">
+
+                            <button>
+                                <img src="img/jogos/bug.webp" height="350px" width="500px">
+                            </button>
+
+                            <dialog>
+                                <div class="container-info">
+
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+
+                                        <img src="img/jogos/bug.webp" width="300px">
+
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Onde está o Bug?
+                                            </p>
+
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                O “Jogo Onde Está o Bug?”,
+                                                criado pelo Elas Digitais,
+                                                tem o intuito de testar a
+                                                habilidade de sistematização
+                                                de problemas com base nos
+                                                quatros pilares do
+                                                pensamento computacional, de
+                                                forma desplugada,
+                                                especificamente em
+                                                reconhecimentos de padrões.
+                                                Neste jogo você tem como
+                                                objetivo montar combinações
+                                                de cores, afim de encontrar
+                                                os bugs e fazer o máximo de
+                                                combinações possíveis com as
+                                                cores escolhidas.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="mat" id="roupa">
+
+                            <button>
+                                <img src="img/jogos/roup.png" height="350px" width="500px">
+                            </button>
+
+                            <dialog>
+                                <div class="container-info">
+
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+
+                                        <img src="img/jogos/roup.png" width="300px">
+
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Com que roupa eu vou?
+                                            </p>
+
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                No jogo, você irá acompanhar
+                                                Renata em uma emocionante
+                                                jornada de compras, onde
+                                                terá que selecionar as peças
+                                                de roupa mais adequadas.
+                                                Depois, você usará suas
+                                                habilidades de combinação
+                                                para criar looks de acordo
+                                                com a situção adequada.
+                                                Quanto mais rápido e
+                                                criativo você for, mais
+                                                próximo estará de ajudar
+                                                Renata a brilhar e ganhar o
+                                                prêmio!
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+
                     </div>
-                    <button class="next-button"><img src="img/arrow.png"
-                            alt="next button"></button>
                 </div>
-                <p>Link para todas as nossas cartilhas</p>
-
-                <a
-                    href="https://drive.google.com/drive/u/0/folders/1gxfVBLniZcl6kvykM5UPp5KmBY1USyKW"
-                    target="_blank"
-                    class="link">Drive</a>
-
+                <button class="next-button"><img src="img/arrow.png" alt="next button"></button>
             </div>
         </section>
 
-        <section>
-            <h2>Cartilhas - Arduino</h2>
+        <section class="folderes">
+            <h2>Fôlderes</h2>
             <p class="desc">Fôlderes informativos sobre oito cursos da área de
                 TI, desenvolvidos para apresentar diferentes
                 possibilidades de formação e atuação em tecnologia, com foco na
@@ -1303,11 +1240,10 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
 
             <div class="material solo">
 
-                <div class="mat" id="introducao">
+                <div class="mat" id="folder">
 
                     <button>
-                        <img src="img/carreiras.jpg" height="400px"
-                            width="550px">
+                        <img src="img/carreiras.jpg" height="400px" width="550px">
                     </button>
 
                     <dialog>
@@ -1319,7 +1255,7 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
                             <h3>Informações</h3>
                             <div class="conteudo">
 
-                                <img src="img/carreiras.jpg" width="400px">
+                                <img src="img/carreiras.jpg" width="300px">
 
                                 <div class="info">
                                     <p class="titulo">
@@ -1358,9 +1294,9 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
                                         Edital PROEX nº 20/2019
                                     </p>
 
-                                    <a class="link"
-                                        href="PDF/folders-carreiras-na-area-da-ti (1).pdf"
-                                        target="_blank">PDF para
+                                    <a class="link" href="PDF/folders-carreiras-na-area-da-ti (1).pdf"
+                                        target="_blank">PDF
+                                        para
                                         vizualização</a>
                                 </div>
                             </div>
@@ -1371,20 +1307,19 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
             </div>
         </section>
 
-        <section>
+        <section class="podcast">
             <h2>Podcast</h2>
-            <p>Quatro podcasts sobre carreiras na área de TI, com profissionais
+            <p class = "desc">Quatro podcasts sobre carreiras na área de TI, com profissionais
                 compartilhando suas experiências em Ciência da
                 Computação, Sistemas de Informação, Engenharia de Computação e
                 Licenciatura em Computação.</p>
 
             <div class="material solo">
 
-                <div class="mat" id="introducao">
+                <div class="mat" id="podcast">
 
                     <button>
-                        <img src="img/podcast.webp" height="400px"
-                            width="400px">
+                        <img src="img/podcast.webp" height="400px" width="400px">
                     </button>
 
                     <dialog>
@@ -1426,8 +1361,7 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
 
                                     </p>
 
-                                    <a class="link"
-                                        href="https://creators.spotify.com/pod/profile/elasdigitais/"
+                                    <a class="link" href="https://creators.spotify.com/pod/profile/elasdigitais/"
                                         target="_blank">Ouça agora</a>
                                 </div>
                             </div>
@@ -1438,9 +1372,9 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
             </div>
         </section>
 
-        <section>
+        <section class="jogo-digital">
             <h2>Jogo digital</h2>
-            <p>Jogo de RPG que apresenta quatro mulheres cientistas que
+            <p class = "desc">Jogo de RPG que apresenta quatro mulheres cientistas que
                 contribuíram
                 para a transformação de suas áreas.
                 Desenvolvido por alunas do Curso Técnico em Informática do IFSC
@@ -1449,11 +1383,10 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
 
             <div class="material solo">
 
-                <div class="mat" id="introducao">
+                <div class="mat" id="jogo-digital">
 
                     <button>
-                        <img src="img/jogo.jpg" height="400px"
-                            width="400px">
+                        <img src="img/jogo.jpg" height="400px" width="400px">
                     </button>
 
                     <dialog>
@@ -1496,10 +1429,10 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
                                     <a class="link"
                                         href="https://drive.google.com/drive/folders/1EObjb8S9D1VJbUgEag9rWSAmIGcRl8WW"
                                         target="_blank">Jogo</a>
-
+                                    <br>
                                     <a class="link"
                                         href="https://docs.google.com/forms/d/e/1FAIpQLScisr3kf-rWJoFVAuiej63C6ipyKSWsRbcFHnIxWOLQe-_xQQ/viewform"
-                                        target="_blank">Formulário</a> 
+                                        target="_blank">Formulário</a>
                                 </div>
                             </div>
                         </div>
@@ -1511,191 +1444,193 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
 
         <section>
             <h2>Outros</h2>
-            <p>Outros materiais e recursos desenvolvidos pelo projeto Elas Digitais,
-            voltados à tecnologia, ciência,
-            pensamento computacional e representatividade feminina.</p>
+            <p class = "desc">Outros materiais e recursos desenvolvidos pelo projeto Elas Digitais,
+                voltados à tecnologia, ciência,
+                pensamento computacional e representatividade feminina.</p>
 
-            <div class="material">
-                <div class="container-slider">
-                    <button class="prev-button"><img src="img/arrow.png"
-                            alt="prev button"></button>
-                    <div class="viewport">
-                        <div class="container-images">
+            <div class="container-slider">
+                <button class="prev-button"><img src="img/arrow.png" alt="prev button"></button>
+                <div class="viewport">
+                    <div class="container-images">
 
-                            <div class="mat" id="roteiro">
+                        <div class="mat" id="roteiro">
 
-                                <button>
-                                    <img
-                                        src="img/roteiro.png"
-                                        height="350px" width="250px">
-                                </button>
+                            <button>
+                                <img src="img/roteiro.png" height="350px" width="250px">
+                            </button>
 
-                                <dialog>
-                                    <div class="container-info">
+                            <dialog>
+                                <div class="container-info">
 
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
 
-                                            <img
-                                                src="img/roteiro.png"
-                                                width="200px">
+                                        <img src="img/roteiro.png" width="200px">
 
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Roteiro - Oficina de Scratch
-                                                </p>
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Roteiro - Oficina de Scratch
+                                            </p>
 
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    Você encontra a seguir o material de apoio da oficina “Programação em Blocos com Scratch”. Você pode baixar o material e replicar a oficina, desde que respeite a licença Creative Commons BY-NC-SA.
-                                                </p>
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Você encontra a seguir o material de apoio da oficina “Programação em
+                                                Blocos com Scratch”. Você pode baixar o material e replicar a oficina,
+                                                desde que respeite a licença Creative Commons BY-NC-SA.
+                                            </p>
 
-                                                <a class="link"
-                                                    href="https://docs.google.com/document/d/1Dr9f5c-IXGkZGrjzcRA7iwiJjC75_j8HCkqKldpmN9Y/edit?tab=t.0">Acesar</a>
-                                            </div>
+                                            <a class="link"
+                                                href="https://docs.google.com/document/d/1Dr9f5c-IXGkZGrjzcRA7iwiJjC75_j8HCkqKldpmN9Y/edit?tab=t.0">Acesar</a>
                                         </div>
                                     </div>
-                                </dialog>
-                            </div>
-
-                            <div class="mat" id="banner">
-
-                                <button>
-                                    <img
-                                        src="img/panfleto.webp"
-                                        height="350px" width="250px">
-                                </button>
-
-                                <dialog>
-                                    <div class="container-info">
-
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-
-                                            <img
-                                                src="img/panfleto.webp"
-                                                width="200px">
-
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Banner
-                                                </p>
-
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                    Conheça o Elas Digitais, projeto desenvolvido no Instituto Federal de Santa Catarina, Campus Gaspar, com o objetivo de incentivar a participação de meninas e mulheres na área de Tecnologia da Informação. O projeto promove ações de ensino, pesquisa e extensão, como oficinas, cursos, palestras, mentorias e produção de materiais educativos. Seu público-alvo inclui estudantes do ensino fundamental, médio e técnico, além de professores e profissionais da região. Ao longo de sua trajetória, o projeto desenvolveu diversas iniciativas voltadas à inclusão, à igualdade de gênero e ao estímulo da presença feminina nas áreas de Computação e STEM.
-                                                </p>
-
-                                                <a class="link"
-                                                    href="https://www.canva.com/design/DAF85TDD2mc/QbPzXvVwzEcoHkVvWsEgqw/edit">Acessar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dialog>
-                            </div>
-
-                            <div class="mat" id="calendario">
-
-                                <button>
-                                    <img
-                                        src="img/Calendario.jpg"
-                                        height="350px" width="250px">
-                                </button>
-
-                                <dialog>
-                                    <div class="container-info">
-
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-
-                                            <img
-                                                src="img/Calendario.jpg"
-                                                width="200px">
-
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Calendario do Elas
-                                                </p>
-
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                   Inspiradas pela conversa do dia 09/06/20, o Elas Digitais preparou um design editável com um calendário de estudos. Basta acessa o link e personalizar o calendário com sua própria rotina. Atenção: é necessário ter usuário na ferramenta Canva ou então logar com sua conta do Gmail ou da Facebook.
-                                                </p>
-
-                                                <a class="link"
-                                                    href="https://www.canva.com/pt_br/login/?pageLinkPreviewVariant=design&redirect=%2Fdesign%2FDAEAlffR3eY%2Fshare%2Fpreview%3Ftoken%3DegwN8_rVvvoQCktgaztQ4Q%26role%3DEDITOR%26utm_content%3DDAEAlffR3eY%26utm_campaign%3Ddesignshare%26utm_medium%3Dlink%26utm_source%3Dsharebutton">Acessar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dialog>
-                            </div>
-
-                            <div class="mat" id="calendario">
-
-                                <button>
-                                    <img
-                                        src="img/como estudar.jpg"
-                                        height="350px" width="250px">
-                                </button>
-
-                                <dialog>
-                                    <div class="container-info">
-
-                                        <button class="close">
-                                            X
-                                        </button>
-                                        <h3>Informações</h3>
-                                        <div class="conteudo">
-
-                                            <img
-                                                src="img/como estudar.jpg"
-                                                width="200px">
-
-                                            <div class="info">
-                                                <p class="titulo">
-                                                    <strong>Título</strong><br>
-                                                    Dicas de como estudar em casa
-                                                </p>
-
-                                                <p class="desc">
-                                                    <strong>Descrição</strong><br>
-                                                   Criado a partir do encontro Mensal do Elas Digitais com as alunas do Análise e Desenvolvimento de Sistemas do IFSC Gaspar e das alunas de Engenharia de Software da UDESC de Ibirama, este informativo sistematiza as dicas dadas pelas professoras Dra. Daniela Sbizera Justo e Dra. Marília Guterres Ferreira. Apesar de ter sido pensado a partir da necessidade de estudo remoto, estas dicas se aplicam a qualquer situação. Baixe o Informativo disponível a seguir.
-                                                </p>
-
-                                                <a class="link"
-                                                    href="PDF/dicas-de-como-estudar-em-casa-1.pdf">Acessar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dialog>
-                            </div>
+                                </div>
+                            </dialog>
                         </div>
+
+                        <div class="mat" id="banner">
+
+                            <button>
+                                <img src="img/panfleto.webp" height="350px" width="250px">
+                            </button>
+
+                            <dialog>
+                                <div class="container-info">
+
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+
+                                        <img src="img/panfleto.webp" width="200px">
+
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Banner
+                                            </p>
+
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Conheça o Elas Digitais, projeto desenvolvido no Instituto Federal de
+                                                Santa Catarina, Campus Gaspar, com o objetivo de incentivar a
+                                                participação de meninas e mulheres na área de Tecnologia da Informação.
+                                                O projeto promove ações de ensino, pesquisa e extensão, como oficinas,
+                                                cursos, palestras, mentorias e produção de materiais educativos. Seu
+                                                público-alvo inclui estudantes do ensino fundamental, médio e técnico,
+                                                além de professores e profissionais da região. Ao longo de sua
+                                                trajetória, o projeto desenvolveu diversas iniciativas voltadas à
+                                                inclusão, à igualdade de gênero e ao estímulo da presença feminina nas
+                                                áreas de Computação e STEM.
+                                            </p>
+
+                                            <a class="link"
+                                                href="https://www.canva.com/design/DAF85TDD2mc/QbPzXvVwzEcoHkVvWsEgqw/edit">Acessar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="mat" id="calendario">
+
+                            <button>
+                                <img src="img/Calendario.jpg" height="350px" width="250px">
+                            </button>
+
+                            <dialog>
+                                <div class="container-info">
+
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+
+                                        <img src="img/Calendario.jpg" width="200px">
+
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Calendario do Elas
+                                            </p>
+
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Inspiradas pela conversa do dia 09/06/20, o Elas Digitais preparou um
+                                                design editável com um calendário de estudos. Basta acessa o link e
+                                                personalizar o calendário com sua própria rotina. Atenção: é necessário
+                                                ter usuário na ferramenta Canva ou então logar com sua conta do Gmail ou
+                                                da Facebook.
+                                            </p>
+
+                                            <a class="link"
+                                                href="https://www.canva.com/pt_br/login/?pageLinkPreviewVariant=design&redirect=%2Fdesign%2FDAEAlffR3eY%2Fshare%2Fpreview%3Ftoken%3DegwN8_rVvvoQCktgaztQ4Q%26role%3DEDITOR%26utm_content%3DDAEAlffR3eY%26utm_campaign%3Ddesignshare%26utm_medium%3Dlink%26utm_source%3Dsharebutton">Acessar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+
+                        <div class="mat" id="calendario">
+
+                            <button>
+                                <img src="img/como estudar.jpg" height="350px" width="250px">
+                            </button>
+
+                            <dialog>
+                                <div class="container-info">
+
+                                    <button class="close">
+                                        X
+                                    </button>
+                                    <h3>Informações</h3>
+                                    <div class="conteudo">
+
+                                        <img src="img/como estudar.jpg" width="200px">
+
+                                        <div class="info">
+                                            <p class="titulo">
+                                                <strong>Título</strong><br>
+                                                Dicas de como estudar em casa
+                                            </p>
+
+                                            <p class="desc">
+                                                <strong>Descrição</strong><br>
+                                                Criado a partir do encontro Mensal do Elas Digitais com as alunas do
+                                                Análise e Desenvolvimento de Sistemas do IFSC Gaspar e das alunas de
+                                                Engenharia de Software da UDESC de Ibirama, este informativo sistematiza
+                                                as dicas dadas pelas professoras Dra. Daniela Sbizera Justo e Dra.
+                                                Marília Guterres Ferreira. Apesar de ter sido pensado a partir da
+                                                necessidade de estudo remoto, estas dicas se aplicam a qualquer
+                                                situação. Baixe o Informativo disponível a seguir.
+                                            </p>
+
+                                            <a class="link" href="PDF/dicas-de-como-estudar-em-casa-1.pdf">Acessar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+
+
                     </div>
-                    <button class="next-button"><img src="img/arrow.png"
-                            alt="next button"></button>
                 </div>
+                <button class="next-button"><img src="img/arrow.png" alt="next button"></button>
 
             </div>
+
         </section>
 
-        
+    </main>
+    <!-- footer -->
+    <div id="footer"></div>
 
-        <!-- footer -->
-        <div id="footer"></div>
-
-    </body>
+</body>
 
 </html>
 
@@ -1750,13 +1685,13 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
         let currentIndex = 0;
 
         //maximo que as imagens rolam
-        function getMaxScroll() {return track.scrollWidth - viewport.clientWidth;}
+        function getMaxScroll() { return track.scrollWidth - viewport.clientWidth; }
 
         // Primeiro índice que já encosta no final da fila
         function getMaxIndex() {
-        const maxScroll = getMaxScroll();
-        const index = Array.from(slides).findIndex(s => s.offsetLeft >= maxScroll);
-        return index === -1 ? slides.length - 1 : index;
+            const maxScroll = getMaxScroll();
+            const index = Array.from(slides).findIndex(s => s.offsetLeft >= maxScroll);
+            return index === -1 ? slides.length - 1 : index;
         }
 
         // Move a fila até a posição do material atual
