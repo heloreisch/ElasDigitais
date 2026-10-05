@@ -1,27 +1,53 @@
-main > h1 {
-    font-size: 45px;
-
-    color: #3f0b3d;
-
-    margin-top: 15px;
-    margin-bottom: 10px;
+*{
+    padding: 0;
+    border: 0;
+    margin:0;
 }
 
-section > h2 {
-    font-size: 29px;
+body{
+    position: static;
 
-    color: #3f0b3d;
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--preto);
+}
 
-    margin-bottom: 25px;
-    border-left: 6px solid #681263;
-    padding-left: 15px;
+main{
+    position: relative;
+
+    width: 78%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+main >.desc{
+
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 650px;
+
+    margin-bottom: 45px;
+
+    color: #29233f;
 }
 
 section{
-    margin-bottom: 1rem;
-    transition: 0.3s;
+     transition: 0.3s;
+
     animation: aparecer 0.8s;
 }
+section >.desc{
+
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 900px;
+
+    margin-bottom: 45px;
+
+    color: #29233f;
+}
+
 .container-slider {
   display: flex;
   width: 100%;
@@ -41,7 +67,7 @@ section{
     padding-top: 15px;
 }
 
-.viewport.grande {
+.viewport.grande{
     width: 500px;
 }
 
@@ -157,33 +183,30 @@ img{
     padding: 10px 20px;
     color:#f5edf4;
     border-radius: 5px;
+    margin-top: auto;
+    margin-right: auto;
     text-decoration: none;
 }
+
 .link:hover, .link-geral:hover{
     background-color: #601657;
 }
 
-.link-geral{
-    text-decoration: none;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.link-geral {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
 
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #6b2b68;
-    color: white;
+    background-color: #652d5e;
+    padding: 10px 20px;
+    color: #f5edf4;
     border-radius: 5px;
+    text-decoration: none;
 }
 
+
 p{
-    font-size: 18px;
-    line-height: 1.4;
-    max-width: 650px;
-
-    margin-bottom: 45px;
-
-    color: #29233f;
+    margin-bottom: 10px;
 }
 
 button{
@@ -199,6 +222,26 @@ button{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+h2 {
+    font-size: 29px;
+
+    color: #3f0b3d;
+
+    margin-bottom: 25px;
+    border-left: 6px solid #681263;
+    padding-left: 15px;
+}
+
+h1 {
+    font-size: 45px;
+
+    color: #3f0b3d;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 
 @keyframes aparecer {
 
