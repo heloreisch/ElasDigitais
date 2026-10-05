@@ -9,22 +9,13 @@
 
     <!-- codigo css -->
     <link rel="stylesheet" href="../css/styleEquipe.css">
+    <link rel="stylesheet" href="../css/styleGeral.css">
 </head>
 
 <body>
 
-    <!-- cabeçalho -->
-    <header>
-
-        <h1>Elas Digitais</h1>
-
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="materiais.html">Materiais</a>
-            <a href="equipe.html">Equipe</a>
-        </nav>
-
-    </header>
+     <!-- cabecalho -->
+    <div id="header"></div>
 
     <!-- tudo o que tem dentro da pagina -->
     <main>
@@ -177,9 +168,21 @@
     </main>
 
     <!-- footer -->
-    <footer>
-        <p>Elas Digitais - IFSC Campus Gaspar</p>
-    </footer>
+    <div id="footer"></div>
+
+    <script>
+    fetch("partials/header.html")
+        .then(resposta => resposta.text())
+        .then(conteudo => {
+            document.getElementById("header").innerHTML = conteudo;
+        });
+
+    fetch("partials/footer.html")
+        .then(resposta => resposta.text())
+        .then(conteudo => {
+            document.getElementById("footer").innerHTML = conteudo;
+        });
+</script>
 
 </body>
 

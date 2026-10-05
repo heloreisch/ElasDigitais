@@ -17,6 +17,57 @@ body{
 }
 
 
+/* cabecalho */
+header {
+    position: sticky;
+    top: 0;
+
+    background-color: rgba(252, 248, 247, 0.95);
+
+    padding: 18px 11%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e7dfe5;
+
+    z-index: 10;
+}
+
+/* elas digitais titulo */
+header h1 {
+    font-size: 30px;
+    color: var(--roxo-escuro);
+}
+
+/* menu */
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #1d1730;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: 0.3s;
+    padding-bottom: 8px;
+}
+
+/* footer */
+footer {
+    background-color: #681263;
+    color: #e7dfe5;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
  @media screen and (max-width: 400px){
              *{
                 display: flex;

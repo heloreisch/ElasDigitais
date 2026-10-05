@@ -26,6 +26,10 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
 -->
 
 <body>
+
+    <!-- cabecalho -->
+    <div id="header"></div>
+    
     <h1>Materiais</h1>
     <p class="desc" p>Conheça nossos materiais digitais! Nesta seção, você encontra materiais desenvolvidos pelo projeto
         Elas Digitais, que podem ser utilizados e aplicados de forma remota em diferentes atividades.</p>
@@ -835,6 +839,23 @@ Vídeo de explicação sobre modal: https://youtu.be/hg66uftLsTQ?si=FQsoorAFqQkB
     <h2>Outros</h2>
     <p>Outros materiais e recursos desenvolvidos pelo projeto Elas Digitais, voltados à tecnologia, ciência,
         pensamento computacional e representatividade feminina.</p>
+    
+        <!-- footer -->
+    <div id="footer"></div>
+    s
+        <script>
+    fetch("partials/header.html")
+        .then(resposta => resposta.text())
+        .then(conteudo => {
+            document.getElementById("header").innerHTML = conteudo;
+        });
+
+    fetch("partials/footer.html")
+        .then(resposta => resposta.text())
+        .then(conteudo => {
+            document.getElementById("footer").innerHTML = conteudo;
+        });
+</script>
 
 </body>
 

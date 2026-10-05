@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../css/styleIndex.css">
+<link rel="stylesheet" href="../css/styleGeral.css">
 <!--<link rel="stylesheet" href="../css/styleGeral.css">-->
 
 
@@ -13,6 +14,8 @@
 
 <body>
 
+    <!-- cabecalho -->
+    <div id="header"></div>
 
     <section class="banner">
         <div class="texto">
@@ -142,6 +145,24 @@
         </div>
 
     </section>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <script>
+    fetch("partials/header.html")
+        .then(resposta => resposta.text())
+        .then(conteudo => {
+            document.getElementById("header").innerHTML = conteudo;
+        });
+
+    fetch("partials/footer.html")
+        .then(resposta => resposta.text())
+        .then(conteudo => {
+            document.getElementById("footer").innerHTML = conteudo;
+        });
+</script>
+
 </body>
 
 </html>
