@@ -87,38 +87,4 @@ footer {
         padding: 15px 5%;
     }
 
-    .imagem img { 
-        
-        max-width: 100%; height: auto;
-     }
-
-    .cards {
-        width: 90%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 15px;
-        grid-column: 1;
-        grid-row: auto;
-        padding: 22px;
-
-
-    }
-
-    .equipe {
-        grid-template-columns: 1fr;
-    }
-
-    .pessoa {
-        grid-template-columns: 65px 1fr;
-        column-gap: 15px;
-        padding: 18px;
-    }
-
-    .fotoIntegrante {
-        width: 65px;
-        height: 65px;
-        grid-column: 1;
-        grid-row: 1 / 4;
-    }
 }

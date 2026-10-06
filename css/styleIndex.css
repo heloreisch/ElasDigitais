@@ -278,3 +278,27 @@ footer {
     color: var(--branco);
     font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .cards {
+        display: flex; 
+        flex-direction: column ;
+        grid-template-columns: 1fr ;
+        width: 90%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .cards,
+     .missao,
+     .valores,
+    .visao {
+        width: 100% ;
+        max-width: 100%;
+        box-sizing: border-box;
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+}
