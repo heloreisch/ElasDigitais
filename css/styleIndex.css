@@ -1,12 +1,14 @@
-
+/* * = seletor universal, todas essas proriwedades vao ser aplicadas em todos os elemtos */
 * {
     margin: 0;
+    /*remove margem padrao*/
     padding: 0;
     box-sizing: border-box;
+    /* faz com que tipo padding e border sejam contados junyo com s escrita*/
     font-family: 'Open Sans', sans-serif;
 }
 
-
+/*declaração de variaiveis globais que podem ser udsadas em diferentes paginas*/
 :root {
     --roxo-escuro: #3f1d57;
     --roxo-elasdigitais: #6b2d84;
@@ -20,6 +22,7 @@
     --sombra: 0 8px 25px rgba(0, 0, 0, 0.12);
     --arredondamento-borda: 18px;
     --transicao: 0.3s ease;
+    /*a mudança começa e termina devaegazinho em vez de acontecer  uniforme.*/
 }
 
 
@@ -32,16 +35,17 @@ body {
 .banner {
     width: 100%;
     min-height: 550px;
+    /*define uma altura minima de 550 pixels*/
     background-color: var(--cinza-claro);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /*transforma o elemento em um contêiner flexível que permite organizar os elementos filhos em uma linha ou coluna nsse caos
+        ele organiza o bloco de texto e a imagem lado a lado pq a direção padrão do flexbox é row */
+    align-items: center; /*alinha os elementos filhos no centro do eixo horizontal*/
+    justify-content: space-between; /*distribui os elementos  do eixo principal colocando um espaço livre entre eles*/
     padding: 70px 8%;
     color: var(--roxo-escuro);
     gap: 50px;
 }
-
-
 
 .texto {
     width: 52%;
@@ -49,8 +53,11 @@ body {
 
 .subtitulo {
     font-size: 17px;
+    /*espaçamento das letras*/
     letter-spacing: 3px;
+    /*altura em relaçaio a fonte*/
     line-height: 1.6;
+    /*add 20 px de margem abaixo */
     margin-bottom: 20px;
     font-weight: 600;
     color: var(--roxo-elasdigitais);
@@ -58,7 +65,6 @@ body {
 
 .banner h1 {
     font-size: 78px;
-    line-height: 0.9;
     margin-bottom: 30px;
     text-align: left;
     color: var(--roxo-escuro);
@@ -70,7 +76,6 @@ body {
 
 .descricao {
     font-size: 18px;
-    line-height: 1.7;
     max-width: 600px;
     margin-bottom: 30px;
     color: var(--cinza-texto);
@@ -78,20 +83,22 @@ body {
 
 
 .botao {
+    /*comporta como um elemento em linha*/
     display: inline-block;
     background-color: var(--roxo-elasdigitais);
     color: var(--branco);
     padding: 14px 28px;
+    /*deixa a borda + redondinha*/
     border-radius: 25px;
-    text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     transition: var(--transicao);
 }
-
+/*quando o mouse estiver em cima do botão faça tal coisa */
 .botao:hover {
     background-color: var(--roxo-escuro);
     color: var(--branco);
+    /*ele "ttranfirma" seu tamannho no eixo Y  ou seja ele se move p cima em 2px (negativo é p cima)*/
     transform: translateY(-2px);
 }
 
@@ -99,14 +106,15 @@ body {
 .imagem {
     width: 45%;
     display: flex;
+    /*centraliza a imagem horizontalmente dentro da área.*/
     justify-content: center;
     align-items: center;
 }
 
 .imagem img {
     width: 100%;
-    max-width: 520px;
-    height: auto;
+    max-width: 520px; /* 520 pixel a largura maxima da img.*/
+    height: auto; /*proproção original da img*/
     transition: var(--transicao);
 }
 
@@ -138,7 +146,7 @@ body {
     margin: 0 auto 40px;
     padding: 25px 30px;
     background-color: var(--cinza-claro);
-    border-left: 4px solid var(--roxinho);
+    border-left: 4px solid var(--roxinho); /* cria uma borda no lado esquerdo */
     line-height: 1.7;
     color: var(--cinza-texto);
     transition: var(--transicao);
@@ -150,9 +158,7 @@ body {
 
 .motivacao h3 {
     font-size: 22px;
-
     color: var(--roxo-elasdigitais);
-
     margin-bottom: 8px;
 }
 
@@ -177,9 +183,13 @@ body {
 .cards {
     width: 80%;
     max-width: 1100px;
+    /*define as margens dos cards 0 = margem de cim 0 /auto =  lateral automatica/ 60px = debaixo*/
     margin: 0 auto 60px;
+    /*css grid = permite organizar os elementos em linhas e colunas*/
     display: grid;
+    /*cada coluna usa 1fr (fração do espçao diponivel) = cada uma ocupa metade do espaço */
     grid-template-columns: 1fr 1fr;
+    /* duas linhas queo tamanho é ajustado automaticamente conforme o conteudo nelas */
     grid-template-rows: auto auto;
     gap: 18px;
 }
