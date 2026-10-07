@@ -131,7 +131,9 @@ body {
 #projeto {
     font-size: 34px;
     color: var(--roxo-escuro);
-    margin: 30px 10px 20px;
+  width: 80%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
     
    
 }
