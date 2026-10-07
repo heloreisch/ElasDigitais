@@ -176,9 +176,6 @@ img{
     cursor: pointer;
 }
 
-
-
-
 dialog {
 
     position: relative;
@@ -324,4 +321,5 @@ button {
     .link-geral {
         margin-bottom: 20px;
     }
+
 }
