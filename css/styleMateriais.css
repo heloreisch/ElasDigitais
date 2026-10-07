@@ -16,27 +16,12 @@
     margin: 0;
 }
 
-body {
-    
-    position: static;
-
-    font-family: Arial, sans-serif;
-    background-color: var(--fundo);
-    color: var(--preto);
-}
-
 main {
-    position: relative;
 
     width: 78%;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 60px;
-}
-
-h1 {
-    font-size: 45px;
-    color: var(--roxo-escuro);
 }
 
 h2 {
@@ -110,7 +95,6 @@ section {
 
 /* Fila que desliza */
 .container-images {
-    position: relative;
     display: flex;
     gap: 20px;
     transition: transform .4s ease;
@@ -186,15 +170,18 @@ section {
     margin-bottom: 2rem;
 }
 
-img {
+img{
     border-radius: 10px;
     display: block;
+    cursor: pointer;
 }
+
+
 
 
 dialog {
 
-    position: fixed;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -212,10 +199,6 @@ dialog {
 /*o fundo de quando o dialog ta aberto*/
 dialog::backdrop {
     background-color: rgb(0 0 0 /.5);
-}
-
-.container-info {
-    position: relative;
 }
 
 .container-info h3 {
@@ -243,7 +226,7 @@ dialog::backdrop {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 
-    position: fixed;
+    position: absolute;
     top: 10px;
     right: 10px;
 
