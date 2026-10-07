@@ -29,6 +29,7 @@
 body {
     background-color: var(--branco);
     color: var(--roxo-escuro);
+    position: static;
 }
 
 
